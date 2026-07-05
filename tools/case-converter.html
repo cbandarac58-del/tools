@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Converter — SmartToolzAI</title>
+  <meta name="description" content="Convert text to upper case, lower case, title case, sentence case, or alternating case instantly.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/case-converter.html">
+  <meta property="og:title" content="Case Converter — SmartToolzAI">
+  <meta property="og:description" content="Convert text to upper case, lower case, title case, sentence case, or alternating case instantly.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Case Converter",
+    "url": "https://smarttoolzai.com/tools/case-converter.html",
+    "description": "Convert text to upper case, lower case, title case, sentence case, or alternating case instantly.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <!-- ADSTERRA AD SLOT: Top Banner -->
+      <div class="ad-placeholder" style="min-height:90px; margin-bottom: 2rem;">
+        <span>Ad Space — 728×90 Header Banner</span>
+      </div>
+
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Case Converter</h1>
+          <p class="tool-description">Convert text to upper case, lower case, title case, sentence case, or alternating case instantly.</p>
+          
+          
+<div class="form-group">
+  <label for="caseInput">Enter your text below:</label>
+  <textarea id="caseInput" class="form-textarea" placeholder="Start typing or paste your text to convert in real-time..." style="min-height: 120px;"></textarea>
+</div>
+
+<div class="btn-group" style="margin-bottom: 2rem;">
+  <button id="clearCaseBtn" class="btn btn-secondary">Clear Text</button>
+  <button id="pasteCaseBtn" class="btn btn-secondary">Paste Text</button>
+</div>
+
+<h3 style="margin-bottom: 1.5rem;">✨ Live Case Converter Outputs</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">
+  <!-- UPPER CASE -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid var(--accent-blue);">
+    <div class="result-header">
+      <h4 style="color: var(--accent-blue);">UPPER CASE</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outUpper">Copy</button>
+    </div>
+    <div id="outUpper" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- lower case -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid var(--accent-purple);">
+    <div class="result-header">
+      <h4 style="color: var(--text-accent);">lower case</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outLower">Copy</button>
+    </div>
+    <div id="outLower" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- Title Case -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid var(--accent-pink);">
+    <div class="result-header">
+      <h4 style="color: var(--accent-pink);">Title Case</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outTitle">Copy</button>
+    </div>
+    <div id="outTitle" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- Sentence Case -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid var(--accent-cyan);">
+    <div class="result-header">
+      <h4 style="color: var(--accent-cyan);">Sentence case</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outSentence">Copy</button>
+    </div>
+    <div id="outSentence" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- camelCase -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #22c55e;">
+    <div class="result-header">
+      <h4 style="color: #22c55e;">camelCase</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outCamel">Copy</button>
+    </div>
+    <div id="outCamel" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- snake_case -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #f59e0b;">
+    <div class="result-header">
+      <h4 style="color: #f59e0b;">snake_case</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outSnake">Copy</button>
+    </div>
+    <div id="outSnake" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- kebab-case -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #06b6d4;">
+    <div class="result-header">
+      <h4 style="color: #06b6d4;">kebab-case</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outKebab">Copy</button>
+    </div>
+    <div id="outKebab" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- PascalCase -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #ef4444;">
+    <div class="result-header">
+      <h4 style="color: #ef4444;">PascalCase</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outPascal">Copy</button>
+    </div>
+    <div id="outPascal" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- aLtErNaTiNg CaSe -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #a78bfa;">
+    <div class="result-header">
+      <h4 style="color: #a78bfa;">aLtErNaTiNg CaSe</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outAlternating">Copy</button>
+    </div>
+    <div id="outAlternating" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- Reverse Case -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #64748b;">
+    <div class="result-header">
+      <h4 style="color: #64748b;">Reverse Case</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outReverse">Copy</button>
+    </div>
+    <div id="outReverse" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- Bubble Case (ⓐⓑⓒ) -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #f472b6;">
+    <div class="result-header">
+      <h4 style="color: #f472b6;">Bubble Case (ⓐⓑⓒ)</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outBubble">Copy</button>
+    </div>
+    <div id="outBubble" class="result-content" style="font-family: inherit; font-size: 0.95rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+
+  <!-- Binary Code -->
+  <div class="result-box" style="margin-top: 0; border-left: 4px solid #34d399;">
+    <div class="result-header">
+      <h4 style="color: #34d399;">Binary Code</h4>
+      <button class="btn btn-ghost btn-sm copy-card-btn" data-target="outBinary">Copy</button>
+    </div>
+    <div id="outBinary" class="result-content" style="font-family: monospace; font-size: 0.85rem; min-height: 40px; word-break: break-all;"></div>
+  </div>
+</div>
+
+
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar">
+          <!-- Populated by JS -->
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">⚡</div>
+            SmartToolz<span class="gradient-text">AI</span>
+          </a>
+          <p>Free AI-powered and utility tools for everyone. No signup, no limits, no cost. Built to make your life easier.</p>
+        </div>
+        <div class="footer-column">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="ai-email-generator.html">AI Email Generator</a></li>
+            <li><a href="ai-title-generator.html">AI Title Generator</a></li>
+            <li><a href="ai-hashtag-generator.html">AI Hashtag Generator</a></li>
+            <li><a href="ai-post-generator.html">AI Post Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Utility Tools</h4>
+          <ul>
+            <li><a href="word-counter.html">Word Counter</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="qr-generator.html">QR Code Generator</a></li>
+            <li><a href="image-compressor.html">Image Compressor</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../pages/about.html">About Us</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../pages/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. All tools are free to use.</p>
+        <p>Made with ❤️ for the world</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools/case-converter.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

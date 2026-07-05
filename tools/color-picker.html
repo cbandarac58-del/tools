@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker — SmartToolzAI</title>
+  <meta name="description" content="Convert HEX, RGB, and HSL colors and generate matching color schemes and palettes.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/color-picker.html">
+  <meta property="og:title" content="Color Picker — SmartToolzAI">
+  <meta property="og:description" content="Convert HEX, RGB, and HSL colors and generate matching color schemes and palettes.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Color Picker",
+    "url": "https://smarttoolzai.com/tools/color-picker.html",
+    "description": "Convert HEX, RGB, and HSL colors and generate matching color schemes and palettes.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <!-- ADSTERRA AD SLOT: Top Banner -->
+      <div class="ad-placeholder" style="min-height:90px; margin-bottom: 2rem;">
+        <span>Ad Space — 728×90 Header Banner</span>
+      </div>
+
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Color Picker</h1>
+          <p class="tool-description">Convert HEX, RGB, and HSL colors and generate matching color schemes and palettes.</p>
+          
+          
+<div class="form-group" style="display: flex; gap: 1.5rem; align-items: center;">
+  <div>
+    <label for="colorPicker">Select Color:</label>
+    <input type="color" id="colorPicker" class="form-input" value="#4f46e5" style="width: 100px; height: 100px; padding: 4px; cursor: pointer; border-radius: var(--radius-md);">
+  </div>
+  <div style="flex: 1;">
+    <div class="form-group">
+      <label>HEX</label>
+      <div style="display: flex; gap: 0.5rem;">
+        <input type="text" id="hexVal" class="form-input" readonly value="#4f46e5">
+        <button id="copyHex" class="btn btn-ghost">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+  <div>
+    <label>RGB</label>
+    <div style="display: flex; gap: 0.5rem;">
+      <input type="text" id="rgbVal" class="form-input" readonly value="rgb(79, 70, 229)">
+      <button id="copyRgb" class="btn btn-ghost">Copy</button>
+    </div>
+  </div>
+  <div>
+    <label>HSL</label>
+    <div style="display: flex; gap: 0.5rem;">
+      <input type="text" id="hslVal" class="form-input" readonly value="hsl(244, 75%, 59%)">
+      <button id="copyHsl" class="btn btn-ghost">Copy</button>
+    </div>
+  </div>
+</div>
+
+<div class="result-box" style="margin-top: 1.5rem;">
+  <div class="result-header">
+    <h4>🎨 Generated Palette Swatches</h4>
+  </div>
+  <div id="paletteContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1rem; margin-top: 1rem;">
+    <!-- Palettes -->
+  </div>
+</div>
+
+
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar">
+          <!-- Populated by JS -->
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">⚡</div>
+            SmartToolz<span class="gradient-text">AI</span>
+          </a>
+          <p>Free AI-powered and utility tools for everyone. No signup, no limits, no cost. Built to make your life easier.</p>
+        </div>
+        <div class="footer-column">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="ai-email-generator.html">AI Email Generator</a></li>
+            <li><a href="ai-title-generator.html">AI Title Generator</a></li>
+            <li><a href="ai-hashtag-generator.html">AI Hashtag Generator</a></li>
+            <li><a href="ai-post-generator.html">AI Post Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Utility Tools</h4>
+          <ul>
+            <li><a href="word-counter.html">Word Counter</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="qr-generator.html">QR Code Generator</a></li>
+            <li><a href="image-compressor.html">Image Compressor</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../pages/about.html">About Us</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../pages/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. All tools are free to use.</p>
+        <p>Made with ❤️ for the world</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools/color-picker.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

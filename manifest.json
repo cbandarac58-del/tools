@@ -1,0 +1,9 @@
+{
+  "name": "SmartToolzAI",
+  "short_name": "SmartToolzAI",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#06060f",
+  "theme_color": "#4f46e5",
+  "description": "Free AI-Powered & Utility Tools Online"
+}
