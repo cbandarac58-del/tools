@@ -260,6 +260,11 @@ function createToolSidebar(currentTool) {
     { name: 'Image Compressor', url: 'image-compressor.html', icon: '🖼️' },
     { name: 'AI Email Generator', url: 'ai-email-generator.html', icon: '📧' },
     { name: 'AI Title Generator', url: 'ai-title-generator.html', icon: '✍️' },
+    { name: 'AI Paragraph Writer', url: 'ai-paragraph-rewriter.html', icon: '✍️' },
+    { name: 'AI Social Bio Generator', url: 'ai-bio-generator.html', icon: '👤' },
+    { name: 'AI Business Name Generator', url: 'ai-business-name-generator.html', icon: '💡' },
+    { name: 'AI Brand Slogan Generator', url: 'ai-slogan-generator.html', icon: '📢' },
+    { name: 'AI Meta Description Generator', url: 'ai-meta-description-generator.html', icon: '🔍' },
     { name: 'AI Hashtag Generator', url: 'ai-hashtag-generator.html', icon: '#️⃣' },
     { name: 'AI Post Generator', url: 'ai-post-generator.html', icon: '📱' },
   ];
