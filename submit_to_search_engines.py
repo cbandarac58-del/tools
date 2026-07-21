@@ -60,6 +60,18 @@ ALL_URLS = [
     "https://smarttoolzai.com/pages/contact.html",
     "https://smarttoolzai.com/pages/privacy-policy.html",
     "https://smarttoolzai.com/pages/terms.html",
+    # Blog Pages
+    "https://smarttoolzai.com/blog/index.html",
+    "https://smarttoolzai.com/blog/km-to-miles.html",
+    "https://smarttoolzai.com/blog/celsius-to-fahrenheit.html",
+    "https://smarttoolzai.com/blog/kg-to-lbs.html",
+    "https://smarttoolzai.com/blog/liters-to-gallons.html",
+    "https://smarttoolzai.com/blog/feet-to-meters.html",
+    "https://smarttoolzai.com/blog/mph-to-kmh.html",
+    "https://smarttoolzai.com/blog/mb-to-gb.html",
+    "https://smarttoolzai.com/blog/inches-to-cm.html",
+    "https://smarttoolzai.com/blog/psi-to-bar.html",
+    "https://smarttoolzai.com/blog/calories-to-joules.html",
 ]
 
 # ===========================
@@ -68,7 +80,7 @@ ALL_URLS = [
 # ===========================
 def submit_indexnow():
     print("\n" + "="*50)
-    print("📡 INDEXNOW — Submitting to Bing/Yandex/Naver...")
+    print("[INDEXNOW] Submitting to Bing/Yandex/Naver...")
     print("="*50)
 
     payload = {
@@ -98,9 +110,9 @@ def submit_indexnow():
             )
             with urllib.request.urlopen(req, timeout=10) as response:
                 status = response.getcode()
-                print(f"  ✅ {endpoint} → HTTP {status}")
+                print(f"  [OK] {endpoint} -> HTTP {status}")
         except Exception as e:
-            print(f"  ⚠️  {endpoint} → {e}")
+            print(f"  [WARN] {endpoint} -> {e}")
         time.sleep(1)
 
 # ===========================
@@ -108,54 +120,58 @@ def submit_indexnow():
 # ===========================
 def ping_google():
     print("\n" + "="*50)
-    print("🔍 GOOGLE — Sitemap Ping...")
+    print("[GOOGLE] Sitemap Ping...")
     print("="*50)
     try:
         ping_url = f"https://www.google.com/ping?sitemap={urllib.parse.quote(SITEMAP_URL)}"
         req = urllib.request.Request(ping_url, headers={"User-Agent": "SmartToolzAI-Indexer/1.0"})
         with urllib.request.urlopen(req, timeout=10) as response:
-            print(f"  ✅ Google Sitemap Ping → HTTP {response.getcode()}")
+            print(f"  [OK] Google Sitemap Ping -> HTTP {response.getcode()}")
     except Exception as e:
-        print(f"  ⚠️  Google Ping failed → {e}")
+        print(f"  [WARN] Google Ping failed -> {e}")
 
 # ===========================
 # 3. Bing Sitemap Ping
 # ===========================
 def ping_bing():
     print("\n" + "="*50)
-    print("🔷 BING — Sitemap Ping...")
+    print("[BING] Sitemap Ping...")
     print("="*50)
     try:
         ping_url = f"https://www.bing.com/ping?sitemap={urllib.parse.quote(SITEMAP_URL)}"
         req = urllib.request.Request(ping_url, headers={"User-Agent": "SmartToolzAI-Indexer/1.0"})
         with urllib.request.urlopen(req, timeout=10) as response:
-            print(f"  ✅ Bing Sitemap Ping → HTTP {response.getcode()}")
+            print(f"  [OK] Bing Sitemap Ping -> HTTP {response.getcode()}")
     except Exception as e:
-        print(f"  ⚠️  Bing Ping failed → {e}")
+        print(f"  [WARN] Bing Ping failed -> {e}")
 
 # ===========================
 # 4. Summary
 # ===========================
 def print_summary():
     print("\n" + "="*50)
-    print("🌍 SEARCH ENGINE COVERAGE SUMMARY")
+    print("SEARCH ENGINE COVERAGE SUMMARY")
     print("="*50)
-    print("  ✅ Google        — via sitemap ping")
-    print("  ✅ Bing          — via IndexNow + sitemap ping")
-    print("  ✅ Yandex        — via IndexNow")
-    print("  ✅ DuckDuckGo    — uses Bing index (auto)")
-    print("  ✅ Yahoo         — uses Bing index (auto)")
-    print("  ✅ Naver (Korea) — via IndexNow")
-    print("  ✅ Seznam (CZ)   — via IndexNow")
-    print(f"\n  📄 Total URLs submitted: {len(ALL_URLS)}")
-    print("\n  ⏱️  Pages may appear in search within 24-72 hours")
+    print("  [OK] Google        -- via sitemap ping")
+    print("  [OK] Bing          -- via IndexNow + sitemap ping")
+    print("  [OK] Yandex        -- via IndexNow")
+    print("  [OK] DuckDuckGo    -- uses Bing index (auto)")
+    print("  [OK] Yahoo         -- uses Bing index (auto)")
+    print("  [OK] Naver (Korea) -- via IndexNow")
+    print("  [OK] Seznam (CZ)   -- via IndexNow")
+    print(f"\n  Total URLs submitted: {len(ALL_URLS)}")
+    print("\n  Pages may appear in search within 24-72 hours")
     print("="*50)
 
 # ===========================
 # RUN ALL
 # ===========================
 if __name__ == "__main__":
-    print("🚀 SmartToolzAI — Search Engine Mass Submission")
+    import sys
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+    print("SmartToolzAI -- Search Engine Mass Submission")
     print(f"   Site: {SITE_URL}")
     print(f"   URLs to submit: {len(ALL_URLS)}")
 
@@ -165,4 +181,4 @@ if __name__ == "__main__":
     time.sleep(1)
     ping_bing()
     print_summary()
-    print("\n✅ All done! Check Google Search Console & Bing Webmaster Tools for status.\n")
+    print("\n[DONE] All done! Check Google Search Console & Bing Webmaster Tools for status.\n")

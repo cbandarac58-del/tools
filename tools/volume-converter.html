@@ -34,6 +34,54 @@
   <script type="application/ld+json">
   { "@context": "https://schema.org", "@type": "WebApplication", "name": "Volume Converter", "url": "https://smarttoolzai.com/tools/volume-converter.html", "description": "Convert volume and capacity. Supports liters, gallons, cubic meters, and more.", "applicationCategory": "UtilityApplication", "operatingSystem": "All" }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many liters are in a gallon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One US liquid gallon is equal to exactly 3.78541 liters. However, if you are using the Imperial gallon (common in the UK), it is equal to approximately 4.54609 liters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I convert milliliters to fluid ounces?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To convert milliliters to US fluid ounces, divide the number of milliliters by 29.5735. For Imperial fluid ounces, divide by 28.4131."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many cups are in a liter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are about 4.22675 US cups in a liter. For metric cups (250 mL each), exactly 4 cups make a liter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between US and Imperial gallons?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A US gallon is defined as 231 cubic inches or exactly 3.785411784 liters, while an Imperial gallon is 4.54609 liters. The Imperial gallon is roughly 20% larger than the US gallon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I convert cubic meters to liters?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiply the volume in cubic meters by 1,000 to get liters. For example, 1 cubic meter is equal to 1,000 liters."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header" id="header">
@@ -90,7 +138,50 @@
             </thead>
             <tbody></tbody>
           </table>
-          
+          <!-- About This Tool -->
+          <div class="info-section" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+            <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">About the Volume Converter</h2>
+            <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 0.75rem;">This volume converter allows you to instantly convert between metric, imperial, and US customary units of volume. Volume measures the three-dimensional space occupied by a substance, typically liquids or gases, and is essential for cooking, science, and everyday fluid measurements.</p>
+            <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 0.75rem;">Understanding the difference between US and Imperial measurements is crucial, especially in cooking and fuel economy. A key distinction is that 1 US gallon is exactly 3.78541 liters, whereas 1 Imperial gallon is 4.54609 liters. Other standard conversions include 1 liter equaling 1000 milliliters (mL), and 1 US cup equaling roughly 236.588 mL.</p>
+            <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">Common use cases involve baking recipes sourced from international websites, converting fuel prices from gallons to liters, or calculating chemical mixtures in a lab. Simply enter your value to get immediate, precise volume conversions.</p>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="faq-section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How many liters are in a gallon?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">One US liquid gallon is equal to exactly 3.78541 liters. However, if you are using the Imperial gallon (common in the UK), it is equal to approximately 4.54609 liters.</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How do I convert milliliters to fluid ounces?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">To convert milliliters to US fluid ounces, divide the number of milliliters by 29.5735. For Imperial fluid ounces, divide by 28.4131.</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How many cups are in a liter?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">There are about 4.22675 US cups in a liter. For metric cups (250 mL each), exactly 4 cups make a liter.</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What is the difference between US and Imperial gallons?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">A US gallon is defined as 231 cubic inches or exactly 3.785411784 liters, while an Imperial gallon is 4.54609 liters. The Imperial gallon is roughly 20% larger than the US gallon.</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How do I convert cubic meters to liters?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Multiply the volume in cubic meters by 1,000 to get liters. For example, 1 cubic meter is equal to 1,000 liters.</p>
+              </details>
+            </div>
+          </div>
+
+          <!-- Related Tools -->
+          <div class="related-tools" style="margin-top: 2rem; padding: 1.5rem; background: rgba(79,70,229,0.05); border: 1px solid rgba(79,70,229,0.15); border-radius: 12px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Related Tools You Might Like</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <a href="weight-converter.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Weight Converter →</a>
+              <a href="length-converter.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Length Converter →</a>
+              <a href="area-converter.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Area Converter →</a>
+            </div>
+          </div>
         </div>
         <aside class="tool-sidebar" id="toolSidebar"></aside>
       </div>

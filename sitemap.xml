@@ -37,4 +37,15 @@
   <url><loc>https://smarttoolzai.com/pages/contact.html</loc><priority>0.5</priority></url>
   <url><loc>https://smarttoolzai.com/pages/privacy-policy.html</loc><priority>0.5</priority></url>
   <url><loc>https://smarttoolzai.com/pages/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://smarttoolzai.com/blog/index.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/km-to-miles.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/celsius-to-fahrenheit.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/kg-to-lbs.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/liters-to-gallons.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/feet-to-meters.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/mph-to-kmh.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/mb-to-gb.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/inches-to-cm.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/psi-to-bar.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/blog/calories-to-joules.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
 </urlset>
