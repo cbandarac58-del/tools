@@ -21,6 +21,54 @@
     "operatingSystem": "All"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I compress images without losing quality?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By using optimal export algorithms, our compressor analyzes the pixels in your image and safely discards data the human eye cannot easily perceive. Using WebP format or keeping JPEG quality around 80% usually results in massive file size savings (often up to 70%) with zero visible difference to the naked eye."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between lossy and lossless compression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lossless compression (like standard PNGs) reduces file size without removing any pixel data, but size savings are usually minimal. Lossy compression (like JPEG and WebP) permanently removes some less important visual data to achieve dramatic file size reductions, making it much better for web delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does a browser-based image compressor work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instead of uploading your photo to a remote server, our tool loads your image into an invisible HTML5 canvas element directly in your browser. It then redraws the image using your chosen dimensions and uses the browser's built-in data URL encoding (toDataURL) to export it at the target quality level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which image formats are supported for compression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our tool currently supports importing JPEG/JPG, PNG, and WebP images. You can choose to keep the original format or convert the output directly into modern, web-optimized formats like WebP."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does quality percentage affect file size?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The quality percentage directly dictates how aggressively the lossy compression algorithm groups and averages pixels. A 100% setting results in a massive file. Dropping quality from 100% to 85% usually cuts the file size in half instantly, while still looking perfect. Dropping below 60% will start to show noticeable compression artifacts (blocky pixels)."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -157,6 +205,48 @@
   </div>
 </div>
 
+<!-- About This Tool -->
+<div class="info-section" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">About the Image Compressor</h2>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 1rem;">Our image compressor is built with modern HTML5 canvas technology to handle image processing natively within your device. When you drag and drop an image, the browser renders the raw pixels into a memory canvas, resizes the matrix if requested, and then utilizes the browser's native encoding parameters (e.g., JPEG/WebP export quality) to generate a highly compressed data URL stream.</p>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">Because this architecture executes entirely client-side, your images are never uploaded to any cloud server. This zero-upload approach guarantees 100% data privacy for your personal photos and sensitive documents, while also operating instantly regardless of your internet connection speed.</p>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq-section" style="margin-top: 2rem;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How can I compress images without losing quality?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">By using optimal export algorithms, our compressor analyzes the pixels in your image and safely discards data the human eye cannot easily perceive. Using WebP format or keeping JPEG quality around 80% usually results in massive file size savings (often up to 70%) with zero visible difference to the naked eye.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What is the difference between lossy and lossless compression?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Lossless compression (like standard PNGs) reduces file size without removing any pixel data, but size savings are usually minimal. Lossy compression (like JPEG and WebP) permanently removes some less important visual data to achieve dramatic file size reductions, making it much better for web delivery.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How does a browser-based image compressor work?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Instead of uploading your photo to a remote server, our tool loads your image into an invisible HTML5 canvas element directly in your browser. It then redraws the image using your chosen dimensions and uses the browser's built-in data URL encoding (toDataURL) to export it at the target quality level.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">Which image formats are supported for compression?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Our tool currently supports importing JPEG/JPG, PNG, and WebP images. You can choose to keep the original format or convert the output directly into modern, web-optimized formats like WebP.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How does quality percentage affect file size?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">The quality percentage directly dictates how aggressively the lossy compression algorithm groups and averages pixels. A 100% setting results in a massive file. Dropping quality from 100% to 85% usually cuts the file size in half instantly, while still looking perfect. Dropping below 60% will start to show noticeable compression artifacts (blocky pixels).</p>
+    </details>
+  </div>
+</div>
+
+<!-- Related Tools -->
+<div class="related-tools" style="margin-top: 2rem; padding: 1.5rem; background: rgba(79,70,229,0.05); border: 1px solid rgba(79,70,229,0.15); border-radius: 12px;">
+  <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Related Tools You Might Like</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    <a href="color-picker.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Color Picker →</a>
+    <a href="qr-generator.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">QR Code Generator →</a>
+  </div>
+</div>
 
         </div>
         <aside class="tool-sidebar" id="toolSidebar">

@@ -21,6 +21,54 @@
     "operatingSystem": "All"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does an age calculator work out exact days and months?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It works by subtracting your birth date from the current date. The underlying algorithm adjusts for months with 28, 29, 30, or 31 days and accounts for leap years to ensure the exact number of days and months is correct."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What day of the week was I born on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By inputting your birth date, the underlying calendar algorithms (such as Zeller's congruence or built-in JavaScript Date objects) can accurately determine whether you were born on a Monday, Tuesday, etc."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does my birthdate determine my zodiac sign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your zodiac sign is determined by the position of the sun on your birthdate according to Western astrology. The year is divided into 12 periods, each corresponding to a specific sign, like Taurus or Gemini."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can this tool count how many hours I have lived?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, by calculating the total number of days between your birth date and the current date, and then multiplying by 24, you can find out the approximate number of hours you have been alive."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many days are left until my next birthday?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The calculator determines your next birthday by taking your birth month and day and applying it to the current or upcoming year, then counting the exact number of days remaining from today."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -76,6 +124,48 @@
 </div>
 
 
+<!-- About This Tool -->
+<div class="info-section" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">About the Age Calculator</h2>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">The Age Calculator provides an accurate breakdown of your exact age in years, months, and days. It uses advanced date subtraction math, taking into account the complexities of the Gregorian calendar, including variable days in different months and leap years.</p>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-top: 1rem;">Beyond just calculating age, the tool can help determine your astrological zodiac sign. Western astrological signs are based on specific date ranges, such as Aries (March 21 - April 19) or Scorpio (October 23 - November 21). Whether you are planning an event or just curious about the exact duration of time since your birth, this tool provides precise chronological data.</p>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq-section" style="margin-top: 2rem;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How does an age calculator work out exact days and months?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">It works by subtracting your birth date from the current date. The underlying algorithm adjusts for months with 28, 29, 30, or 31 days and accounts for leap years to ensure the exact number of days and months is correct.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What day of the week was I born on?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">By inputting your birth date, the underlying calendar algorithms (such as Zeller's congruence or built-in JavaScript Date objects) can accurately determine whether you were born on a Monday, Tuesday, etc.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How does my birthdate determine my zodiac sign?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Your zodiac sign is determined by the position of the sun on your birthdate according to Western astrology. The year is divided into 12 periods, each corresponding to a specific sign, like Taurus or Gemini.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">Can this tool count how many hours I have lived?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Yes, by calculating the total number of days between your birth date and the current date, and then multiplying by 24, you can find out the approximate number of hours you have been alive.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How many days are left until my next birthday?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">The calculator determines your next birthday by taking your birth month and day and applying it to the current or upcoming year, then counting the exact number of days remaining from today.</p>
+    </details>
+  </div>
+</div>
+
+<!-- Related Tools -->
+<div class="related-tools" style="margin-top: 2rem; padding: 1.5rem; background: rgba(79,70,229,0.05); border: 1px solid rgba(79,70,229,0.15); border-radius: 12px;">
+  <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Related Tools You Might Like</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    <a href="time-converter.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Time Converter &rarr;</a>
+    <a href="lorem-generator.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Lorem Ipsum Generator &rarr;</a>
+  </div>
+</div>
         </div>
         <aside class="tool-sidebar" id="toolSidebar">
           <!-- Populated by JS -->

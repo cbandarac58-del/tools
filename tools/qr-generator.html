@@ -21,6 +21,54 @@
     "operatingSystem": "All"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does QR stand for in QR code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "QR stands for Quick Response. The name reflects the creator's intention that the code should be decoded at high speed compared to standard UPC barcodes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much data can a QR code store?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard QR code can store up to 7,089 numeric characters, 4,296 alphanumeric characters, or 2,953 bytes of binary data. The physical size of the QR code matrix increases (from 21x21 modules up to 177x177 modules) as you add more data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is QR code error correction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Error correction allows a QR code to remain readable even if it is partially obscured, dirty, or damaged. It uses the Reed-Solomon error correction algorithm and supports four levels: L (7%), M (15%), Q (25%), and H (30%). Higher levels allow for more damage recovery but create a denser code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I customize the colors of my QR code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can use the built-in color pickers in our tool to change both the foreground (QR pattern) and background colors. It is highly recommended to keep a strong contrast between the two colors (e.g., dark foreground on a light background) to ensure QR code scanners can easily read it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do QR codes expire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Static QR codes like the ones generated here never expire. They permanently hardcode the data (such as a URL or plain text) directly into the matrix pattern. As long as the destination URL remains active or the text is relevant, the QR code will work forever."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -97,6 +145,49 @@
 <!-- Load QRCode.js library -->
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 
+<!-- About This Tool -->
+<div class="info-section" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">About the QR Code Generator</h2>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 1rem;">Quick Response (QR) codes are two-dimensional matrix barcodes invented in 1994. Unlike standard 1D barcodes that are read mechanically by a narrow beam of light, a QR code is detected as a 2D digital image by a semiconductor image sensor and is digitally analyzed by a processor.</p>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 1rem;">This tool utilizes client-side HTML5 canvas rendering to instantly generate QR codes directly in your browser. This means the data you enter is never uploaded to any external server, ensuring absolute privacy for sensitive information like WiFi passwords or contact details.</p>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">A key feature of QR code mechanics is Reed-Solomon error correction. This mathematical algorithm adds backup data to the QR matrix, meaning the code can still be successfully scanned even if up to 30% of it is covered, damaged, or customized with a center logo.</p>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq-section" style="margin-top: 2rem;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What does QR stand for in QR code?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">QR stands for Quick Response. The name reflects the creator's intention that the code should be decoded at high speed compared to standard UPC barcodes.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How much data can a QR code store?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">A standard QR code can store up to 7,089 numeric characters, 4,296 alphanumeric characters, or 2,953 bytes of binary data. The physical size of the QR code matrix increases (from 21x21 modules up to 177x177 modules) as you add more data.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What is QR code error correction?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Error correction allows a QR code to remain readable even if it is partially obscured, dirty, or damaged. It uses the Reed-Solomon error correction algorithm and supports four levels: L (7%), M (15%), Q (25%), and H (30%). Higher levels allow for more damage recovery but create a denser code.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How do I customize the colors of my QR code?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">You can use the built-in color pickers in our tool to change both the foreground (QR pattern) and background colors. It is highly recommended to keep a strong contrast between the two colors (e.g., dark foreground on a light background) to ensure QR code scanners can easily read it.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">Do QR codes expire?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Static QR codes like the ones generated here never expire. They permanently hardcode the data (such as a URL or plain text) directly into the matrix pattern. As long as the destination URL remains active or the text is relevant, the QR code will work forever.</p>
+    </details>
+  </div>
+</div>
+
+<!-- Related Tools -->
+<div class="related-tools" style="margin-top: 2rem; padding: 1.5rem; background: rgba(79,70,229,0.05); border: 1px solid rgba(79,70,229,0.15); border-radius: 12px;">
+  <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Related Tools You Might Like</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    <a href="password-generator.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Password Generator →</a>
+    <a href="color-picker.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Color Picker →</a>
+  </div>
+</div>
 
         </div>
         <aside class="tool-sidebar" id="toolSidebar">
