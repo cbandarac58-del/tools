@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Length Converter — SmartToolzAI</title>
+  <meta name="description" content="Convert lengths and distances instantly. Supports meters, kilometers, miles, yards, and more.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/length-converter.html">
+  <meta property="og:title" content="Length Converter — SmartToolzAI">
+  <meta property="og:description" content="Convert lengths and distances instantly. Supports meters, kilometers, miles, yards, and more.">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Converter-specific styles */
+    .converter-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+    .converter-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: end; margin-bottom: 1rem; }
+    .converter-input { width: 100%; padding: 0.85rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; color: var(--text-normal, #e2e8f0); font-size: 1.2rem; font-weight: 600; outline: none; }
+    .converter-input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79,70,229,0.2); }
+    .converter-select { width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; color: var(--text-normal, #e2e8f0); font-size: 0.9rem; outline: none; }
+    .converter-select option { background: #1e1e3a; }
+    .swap-btn { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #4f46e5, #7c3aed); border: none; color: white; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.3s; align-self: center; }
+    .swap-btn:hover { transform: rotate(180deg); }
+    .result-display { background: linear-gradient(135deg, rgba(79,70,229,0.1), rgba(124,58,237,0.1)); border: 1px solid rgba(79,70,229,0.3); border-radius: 12px; padding: 1.5rem; text-align: center; margin: 1rem 0; }
+    .result-display .result-value { font-size: 2rem; font-weight: 700; color: #818cf8; word-break: break-all; }
+    .result-display .result-label { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
+    .popular-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    .popular-table th { background: rgba(79,70,229,0.2); padding: 0.75rem; text-align: left; font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+    .popular-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; }
+    .popular-table tr:hover td { background: rgba(255,255,255,0.03); }
+    .unit-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; display: block; margin-bottom: 0.5rem; }
+    .copy-btn { margin: 1rem auto 0; display: block; padding: 0.5rem 1rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; color: white; cursor: pointer; transition: background 0.2s; }
+    .copy-btn:hover { background: rgba(255,255,255,0.2); }
+    @media (max-width: 600px) { .converter-row { grid-template-columns: 1fr; } .swap-btn { margin: 0 auto; transform: rotate(90deg); } .swap-btn:hover { transform: rotate(90deg) scale(1.1); } }
+  </style>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "WebApplication", "name": "Length Converter", "url": "https://smarttoolzai.com/tools/length-converter.html", "description": "Convert lengths and distances instantly. Supports meters, kilometers, miles, yards, and more.", "applicationCategory": "UtilityApplication", "operatingSystem": "All" }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="ad-placeholder" style="min-height:90px; margin-bottom: 2rem;"><span>Ad Space</span></div>
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Length Converter</h1>
+          <p class="tool-description">Convert lengths and distances instantly. Supports meters, kilometers, miles, yards, and more.</p>
+          
+          <div class="converter-box">
+            <div style="margin-bottom: 1rem;">
+                <label class="unit-label" for="amount">Amount</label>
+                <input type="number" id="amount" class="converter-input" value="1" step="any">
+            </div>
+            <div class="converter-row">
+              <div>
+                <label class="unit-label" for="fromUnit">From</label>
+                <select id="fromUnit" class="converter-select"></select>
+              </div>
+              <button class="swap-btn" id="swapBtn" aria-label="Swap units">⇄</button>
+              <div>
+                <label class="unit-label" for="toUnit">To</label>
+                <select id="toUnit" class="converter-select"></select>
+              </div>
+            </div>
+            <div class="result-display">
+              <div class="result-value" id="resultValue">...</div>
+              <div class="result-label" id="resultLabel">...</div>
+            </div>
+            <button id="copyBtn" class="copy-btn">Copy Result</button>
+          </div>
+          
+          <h3>Popular Conversions</h3>
+          <table class="popular-table" id="popularTable">
+            <thead>
+              <tr>
+                <th>Conversion</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+          <p>Free AI-powered and utility tools for everyone. No signup, no limits, no cost.</p>
+        </div>
+        <div class="footer-column"><h4>Converters</h4><ul>
+          <li><a href="length-converter.html">Length Converter</a></li>
+          <li><a href="weight-converter.html">Weight Converter</a></li>
+          <li><a href="temperature-converter.html">Temperature Converter</a></li>
+          <li><a href="speed-converter.html">Speed Converter</a></li>
+        </ul></div>
+        <div class="footer-column"><h4>AI Tools</h4><ul>
+          <li><a href="ai-email-generator.html">AI Email Generator</a></li>
+          <li><a href="ai-title-generator.html">AI Title Generator</a></li>
+          <li><a href="ai-hashtag-generator.html">AI Hashtag Generator</a></li>
+        </ul></div>
+        <div class="footer-column"><h4>Company</h4><ul>
+          <li><a href="../pages/about.html">About Us</a></li>
+          <li><a href="../pages/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../pages/terms.html">Terms of Service</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SmartToolzAI. All rights reserved.</p><p>Made with ❤️ for the world</p></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tools/length-converter.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>
