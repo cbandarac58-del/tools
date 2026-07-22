@@ -1,71 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herramientas Gratis de IA y Utilidades Online — SmartToolzAI</title>
-    <meta name="description" content="30+ herramientas gratis en línea para comprimir PDF, contar palabras, convertir unidades y generar textos con IA. 100% privado y sin registro.">
-    <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/index.html" />
-    <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/index.html" />
-    <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/index.html" />
-    <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/index.html" />
-    <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/index.html" />
-    <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/index.html" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramientas Gratis de IA y Utilidades Online — SmartToolzAI</title>
+  <meta name="description" content="30+ herramientas gratis en línea para comprimir PDF, contar palabras, convertir unidades y generar textos con IA. 100% privado y sin registro.">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/index.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/index.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/index.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/index.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/index.html" />
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/es/index.html">Inicio</a>
-            <a href="#herramientas">Herramientas</a>
-            <a href="#sobre-nosotros">Sobre Nosotros</a>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <h1>Herramientas Gratis de IA y Utilidades Online</h1>
-            <p>Descubre nuestra colección de más de 30 herramientas 100% gratuitas, privadas y fáciles de usar.</p>
-            <input type="text" id="toolSearch" placeholder="Buscar herramientas...">
-            <div id="counterTools">Total de herramientas: 30+</div>
-        </section>
-        
-        <section id="herramientas">
-            <h2>Nuestras Herramientas</h2>
-            <div class="card">
-                <h3><a href="/es/tools/pdf-compressor.html">Compresor de PDF</a></h3>
-                <p>Comprimir archivos PDF gratis online sin perder calidad.</p>
-            </div>
-            <div class="card">
-                <h3><a href="/es/tools/pdf-merger.html">Unir PDF</a></h3>
-                <p>Une varios archivos PDF en un solo documento.</p>
-            </div>
-            <div class="card">
-                <h3><a href="/es/tools/word-counter.html">Contador de Palabras</a></h3>
-                <p>Cuenta palabras, caracteres y párrafos en tiempo real.</p>
-            </div>
-            <div class="card">
-                <h3><a href="/es/tools/length-converter.html">Convertidor de Longitud</a></h3>
-                <p>Convierte kilómetros, millas, metros, pies y pulgadas.</p>
-            </div>
-        </section>
-        <section id="sobre-nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>SmartToolzAI ofrece herramientas gratuitas de alta calidad para todos. Sin registro y 100% privado.</p>
-        </section>
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "¿Las herramientas son gratuitas?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, todas nuestras herramientas son 100% gratuitas y sin registro."
-            }
-          }]
-        }
-        </script>
-    </main>
-    <script src="../js/main.js"></script>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="./index.html#pdf-tools">PDF Tools</a>
+        <a href="./index.html#converters">Converters</a>
+        <a href="./index.html#ai-tools">AI Tools</a>
+        <a href="./index.html#utility-tools">Utilities</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: 5rem;">
+    <section class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container">
+        <div class="hero-badge animate-in">
+          <span class="badge-dot"></span>
+          100% Gratis — Sin Registro Requerido
+        </div>
+        <h1>Potencia tu Trabajo con <span class="gradient-text">Herramientas IA</span> y Utilidades</h1>
+        <p><span id="totalToolsCount">30+</span> herramientas gratis online. 100% privado, procesamiento local en tu navegador.</p>
+
+        <div class="hero-search">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="toolSearch" placeholder="Search tools...">
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-number" id="counterTools">30+</div>
+            <div class="stat-label">Free Tools</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Client-Side Private</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">0s</div>
+            <div class="stat-label">Server Wait</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PDF TOOLS -->
+    <section class="section" id="pdf-tools">
+      <div class="container">
+        <div class="section-header animate-in">
+          <div class="section-tag">📄 PDF Tools</div>
+          <h2>Herramientas PDF Gratis</h2>
+          <p>Procesamiento 100% local en tu navegador sin subir archivos a servidores</p>
+        </div>
+
+        <div class="tools-grid stagger-children">
+          <a href="tools/pdf-compressor.html" class="tool-card" data-tool="Compresor de PDF Gratis">
+            <span class="tool-badge popular">🔥 Popular</span>
+            <div class="tool-card-icon red">📉</div>
+            <h3>Compresor de PDF Gratis</h3>
+            <p>Comprimir archivos PDF en línea sin perder calidad. 100% privado y sin límites.</p>
+            <div class="card-arrow">→</div>
+          </a>
+
+          <a href="tools/pdf-merger.html" class="tool-card" data-tool="Unir PDF Gratis">
+            <span class="tool-badge popular">🔥 Popular</span>
+            <div class="tool-card-icon blue">📑</div>
+            <h3>Unir PDF Gratis</h3>
+            <p>Combinar varios archivos PDF en un solo documento. Reordenar páginas e instantáneo.</p>
+            <div class="card-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- UTILITIES -->
+    <section class="section" id="utility-tools">
+      <div class="container">
+        <div class="section-header animate-in">
+          <div class="section-tag">🔧 Utilities</div>
+          <h2>Utilidades Web Populares</h2>
+        </div>
+
+        <div class="tools-grid stagger-children">
+          <a href="tools/word-counter.html" class="tool-card" data-tool="Contador de Palabras">
+            <div class="tool-card-icon blue">📝</div>
+            <h3>Contador de Palabras</h3>
+            <p>Conteo en tiempo real de palabras, caracteres y párrafos. Análisis de palabras clave.</p>
+            <div class="card-arrow">→</div>
+          </a>
+
+          <a href="tools/length-converter.html" class="tool-card" data-tool="Convertidor de Longitud">
+            <div class="tool-card-icon green">📏</div>
+            <h3>Convertidor de Longitud</h3>
+            <p>Convierte kilómetros, millas, metros, pies y pulgadas al instante.</p>
+            <div class="card-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. 100% Client-Side & Private.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>

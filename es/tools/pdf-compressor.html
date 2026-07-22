@@ -1,48 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compresor de PDF Gratis Online (Sin Limites, 100% Privado) — SmartToolzAI</title>
-    <meta name="description" content="Comprimir archivos PDF gratis online sin perder calidad. 100% privado, procesamiento local en tu navegador.">
-    <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/pdf-compressor.html" />
-    <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/pdf-compressor.html" />
-    <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/pdf-compressor.html" />
-    <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/pdf-compressor.html" />
-    <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/pdf-compressor.html" />
-    <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/pdf-compressor.html" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compresor de PDF Gratis Online (Sin Limites, 100% Privado) — SmartToolzAI</title>
+  <meta name="description" content="Comprimir archivos PDF gratis online sin perder calidad. 100% privado, procesamiento local en tu navegador.">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/index.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/index.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/index.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/index.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/index.html" />
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/es/index.html">Inicio</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Compresor de PDF</h1>
-        <div id="dropzone" class="dropzone">Arrastra y suelta tu archivo PDF aquí</div>
-        <input type="file" id="pdfInput" accept="application/pdf">
-        <button id="btnCompress">Comprimir PDF</button>
-        <div id="output"></div>
-        <section id="faq">
-            <h2>Preguntas Frecuentes</h2>
-            <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [{
-                "@type": "Question",
-                "name": "¿Es seguro usar este compresor de PDF?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Sí, el procesamiento es 100% local en tu navegador. Tus archivos nunca se suben a nuestros servidores."
-                }
-              }]
-            }
-            </script>
-        </section>
-    </main>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/tools/pdf-compressor.js"></script>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pdf-tools">PDF Tools</a>
+        <a href="../index.html#converters">Converters</a>
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#utility-tools">Utilities</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: 6rem; padding-bottom: 4rem;">
+    <div class="container" style="max-width: 900px;">
+      <div class="tool-header" style="text-align: center; margin-bottom: 2rem;">
+        <span class="tool-badge popular" style="margin-bottom: 1rem; display: inline-block;">🔒 100% Client-Side Privacy</span>
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Compresor de PDF Gratis</h1>
+        <p style="color: rgba(255,255,255,0.7);">Comprimir archivos PDF gratis online sin perder calidad. 100% privado, procesamiento local en tu navegador.</p>
+        <div style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: #4ade80; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.9rem; margin-top: 1rem; display: inline-block;">
+          🔒 Procesamiento 100% en tu Navegador — Tus archivos NUNCA se suben a ningún servidor
+        </div>
+      </div>
+
+      <div class="tool-card" style="padding: 2rem; border-radius: 16px;">
+        <div class="dropzone" id="pdfDropzone" style="border: 2px dashed rgba(79, 70, 229, 0.4); border-radius: 12px; padding: 3rem; text-align: center; cursor: pointer; transition: all 0.3s ease; background: rgba(79, 70, 229, 0.05);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📄</div>
+          <h3 style="margin-bottom: 0.5rem;">Arrastra y suelta tu archivo PDF aquí o haz clic para buscar</h3>
+          <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">PDF Files Only</p>
+          <input type="file" id="pdfInput" accept="application/pdf" style="display: none;">
+        </div>
+
+        <div id="fileInfo" style="display: none; margin-top: 1.5rem; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span id="fileName" style="font-weight: 600;">document.pdf</span>
+            <span id="fileSize" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">0 MB</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Compression Profile:</label>
+          <select id="compressionLevel" style="width: 100%; padding: 0.75rem; border-radius: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+            <option value="recommended" style="background: #1e1b4b;">Recommended Compression (Balanced Quality & Size)</option>
+            <option value="high" style="background: #1e1b4b;">High Compression (Smaller Size)</option>
+            <option value="low" style="background: #1e1b4b;">Low Compression (Best Quality)</option>
+          </select>
+        </div>
+
+        <button id="btnCompress" disabled style="width: 100%; margin-top: 1.5rem; padding: 1rem; border-radius: 8px; background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; border: none; font-weight: 700; font-size: 1.1rem; cursor: pointer; opacity: 0.5; transition: all 0.3s ease;">
+          ⚡ Comprimir PDF Ahora
+        </button>
+
+        <div id="resultContainer" style="display: none; margin-top: 2rem; text-align: center; padding: 1.5rem; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px;">
+          <div style="font-size: 1.5rem; font-weight: 700; color: #4ade80; margin-bottom: 0.5rem;">🎉 Compression Complete!</div>
+          <p id="savingsText" style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Saved 45% of file size!</p>
+          <a id="btnDownload" href="#" download style="display: inline-block; padding: 0.75rem 2rem; background: #22c55e; color: white; border-radius: 25px; font-weight: 700; text-decoration: none;">
+            ⬇️ Download Compressed PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. 100% Client-Side & Private.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/pdf-compressor.js"></script>
 </body>
 </html>
