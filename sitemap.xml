@@ -15,6 +15,8 @@
   <url><loc>https://smarttoolzai.com/tools/color-picker.html</loc><priority>0.8</priority></url>
   <url><loc>https://smarttoolzai.com/tools/image-compressor.html</loc><priority>0.8</priority></url>
   <url><loc>https://smarttoolzai.com/tools/embed-widget.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/tools/pdf-compressor.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://smarttoolzai.com/tools/pdf-merger.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://smarttoolzai.com/tools/ai-email-generator.html</loc><priority>0.8</priority></url>
   <url><loc>https://smarttoolzai.com/tools/ai-title-generator.html</loc><priority>0.8</priority></url>
   <url><loc>https://smarttoolzai.com/tools/ai-hashtag-generator.html</loc><priority>0.8</priority></url>
