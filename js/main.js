@@ -321,10 +321,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ==========================================
+// DYNAMIC TOOL COUNT AUTO-UPDATER
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+  const toolCards = document.querySelectorAll('.tool-card');
+  if (toolCards.length > 0) {
+    const count = toolCards.length;
+    
+    // Update Hero stats counter (e.g. 30+)
+    const counterTools = document.getElementById('counterTools');
+    if (counterTools) {
+      counterTools.textContent = `${count}+`;
+    }
+    
+    // Update Hero paragraph tool count span (e.g. 30+)
+    const totalToolsCount = document.getElementById('totalToolsCount');
+    if (totalToolsCount) {
+      totalToolsCount.textContent = `${count}+`;
+    }
+  }
+});
+
+// ==========================================
 // TOOL PAGE HELPER: Create sidebar HTML
 // ==========================================
 function createToolSidebar(currentTool) {
   const allTools = [
+    { name: 'PDF Compressor', url: 'pdf-compressor.html', icon: '📉' },
+    { name: 'PDF Merger', url: 'pdf-merger.html', icon: '📑' },
     { name: 'Word Counter', url: 'word-counter.html', icon: '📝' },
     { name: 'Password Generator', url: 'password-generator.html', icon: '🔐' },
     { name: 'Case Converter', url: 'case-converter.html', icon: '🔤' },
@@ -333,6 +357,11 @@ function createToolSidebar(currentTool) {
     { name: 'QR Code Generator', url: 'qr-generator.html', icon: '📱' },
     { name: 'Color Picker', url: 'color-picker.html', icon: '🎨' },
     { name: 'Image Compressor', url: 'image-compressor.html', icon: '🖼️' },
+    { name: 'Website Widget Generator', url: 'embed-widget.html', icon: '🧩' },
+    { name: 'Length Converter', url: 'length-converter.html', icon: '📏' },
+    { name: 'Weight Converter', url: 'weight-converter.html', icon: '⚖️' },
+    { name: 'Temperature Converter', url: 'temperature-converter.html', icon: '🌡️' },
+    { name: 'Speed Converter', url: 'speed-converter.html', icon: '🚀' },
     { name: 'AI Email Generator', url: 'ai-email-generator.html', icon: '📧' },
     { name: 'AI Title Generator', url: 'ai-title-generator.html', icon: '✍️' },
     { name: 'AI Paragraph Writer', url: 'ai-paragraph-rewriter.html', icon: '✍️' },
@@ -365,6 +394,7 @@ function createToolSidebar(currentTool) {
 
     <div class="sidebar-card">
       <h4>⭐ Popular Tools</h4>
+      <a href="pdf-compressor.html" class="sidebar-tool-link"><span>📉</span> PDF Compressor</a>
       <a href="word-counter.html" class="sidebar-tool-link"><span>📝</span> Word Counter</a>
       <a href="password-generator.html" class="sidebar-tool-link"><span>🔐</span> Password Generator</a>
       <a href="qr-generator.html" class="sidebar-tool-link"><span>📱</span> QR Code Generator</a>
