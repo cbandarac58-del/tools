@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Image Compressor Online (Reduce Image Size 80%) — SmartToolzAI</title>
+  <meta name="description" content="Compress JPEG, PNG, and WebP images up to 80% smaller without losing quality. 100% client-side, private, and secure.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/image-compressor.html">
+  <meta property="og:title" content="Free Image Compressor Online (Reduce Image Size 80%) — SmartToolzAI">
+  <meta property="og:description" content="Compress JPEG, PNG, and WebP images up to 80% smaller without losing quality. 100% client-side, private, and secure.">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image Compressor",
+    "url": "https://smarttoolzai.com/tools/image-compressor.html",
+    "description": "Compress JPEG, PNG, and WebP images up to 80% smaller without losing quality. 100% client-side, private, and secure.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I compress images without losing quality?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By using optimal export algorithms, our compressor analyzes the pixels in your image and safely discards data the human eye cannot easily perceive. Using WebP format or keeping JPEG quality around 80% usually results in massive file size savings (often up to 70%) with zero visible difference to the naked eye."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between lossy and lossless compression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lossless compression (like standard PNGs) reduces file size without removing any pixel data, but size savings are usually minimal. Lossy compression (like JPEG and WebP) permanently removes some less important visual data to achieve dramatic file size reductions, making it much better for web delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does a browser-based image compressor work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instead of uploading your photo to a remote server, our tool loads your image into an invisible HTML5 canvas element directly in your browser. It then redraws the image using your chosen dimensions and uses the browser's built-in data URL encoding (toDataURL) to export it at the target quality level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which image formats are supported for compression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our tool currently supports importing JPEG/JPG, PNG, and WebP images. You can choose to keep the original format or convert the output directly into modern, web-optimized formats like WebP."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does quality percentage affect file size?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The quality percentage directly dictates how aggressively the lossy compression algorithm groups and averages pixels. A 100% setting results in a massive file. Dropping quality from 100% to 85% usually cuts the file size in half instantly, while still looking perfect. Dropping below 60% will start to show noticeable compression artifacts (blocky pixels)."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/image-compressor.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/image-compressor.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/image-compressor.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/image-compressor.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/image-compressor.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/image-compressor.html" />
+
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../../pages/about.html">About</a>
+        <a href="../../pages/contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <!-- ADSTERRA AD SLOT: Top Banner -->
+      <div class="ad-placeholder" style="min-height:90px; margin-bottom: 2rem;">
+        <span>Ad Space — 728×90 Header Banner</span>
+      </div>
+
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Image Compressor</h1>
+          <p class="tool-description">Compress JPG and PNG images directly in your browser. Reduce file size up to 80% with no loss in quality.</p>
+          
+          
+<!-- Drag & Drop Zone -->
+<div id="dropZone" style="border: 2px dashed var(--border-color); border-radius: var(--radius-lg); padding: 3rem 1.5rem; text-align: center; background: var(--bg-glass); cursor: pointer; transition: all var(--transition-base); margin-bottom: 2rem;">
+  <div style="font-size: 3.5rem; margin-bottom: 1rem; transition: transform var(--transition-base);" id="dropZoneIcon">📤</div>
+  <h4 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Drag & Drop your image here</h4>
+  <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Supports JPG, PNG, WEBP (Max 15MB)</p>
+  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('imageUpload').click()">Or Browse Files</button>
+  <input type="file" id="imageUpload" accept="image/jpeg, image/png, image/webp" style="display: none;">
+</div>
+
+<!-- Settings Panel (Show only when file loaded) -->
+<div id="settingsPanel" style="display: none; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 2rem;">
+  <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">⚙️ Optimizer Settings</h3>
+  
+  <div class="form-group">
+    <label for="compressQuality">Compression Quality: <span id="qualityVal" style="color: var(--text-accent); font-weight: bold;">80%</span></label>
+    <input type="range" id="compressQuality" class="form-range" min="10" max="100" value="80">
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    <!-- Convert to -->
+    <div>
+      <label for="convertFormat">Convert Format:</label>
+      <select id="convertFormat" class="form-select">
+        <option value="original">Keep Original Format</option>
+        <option value="image/jpeg">Convert to JPEG (Best for photos)</option>
+        <option value="image/png">Convert to PNG (Best for logos)</option>
+        <option value="image/webp">Convert to WEBP (Super light size)</option>
+      </select>
+    </div>
+    
+    <!-- Custom Width -->
+    <div>
+      <label for="customWidth">Resize Width (px):</label>
+      <input type="number" id="customWidth" class="form-input" placeholder="e.g. 1200">
+    </div>
+
+    <!-- Custom Height -->
+    <div>
+      <label for="customHeight">Resize Height (px):</label>
+      <input type="number" id="customHeight" class="form-input" placeholder="e.g. 800">
+    </div>
+  </div>
+
+  <div style="margin-top: 1rem;">
+    <label class="form-checkbox">
+      <input type="checkbox" id="chkAspect" checked> Keep Aspect Ratio
+    </label>
+  </div>
+</div>
+
+<!-- Results Area -->
+<div id="resultsArea" style="display: none;">
+  <!-- Stats Cards -->
+  <div class="stats-row" style="margin-bottom: 2rem; border-top: none; padding-top: 0;">
+    <div class="stat-item" style="border-top: 3px solid var(--text-muted);">
+      <div class="stat-value" id="valOriginalSize">0 KB</div>
+      <div class="stat-name">Original Size</div>
+    </div>
+    <div class="stat-item" style="border-top: 3px solid var(--accent-purple);">
+      <div class="stat-value" id="valOptimizedSize">0 KB</div>
+      <div class="stat-name">Optimized Size</div>
+    </div>
+    <div class="stat-item" style="border-top: 3px solid #22c55e;">
+      <div class="stat-value" id="valSavings" style="color: #22c55e;">0%</div>
+      <div class="stat-name">Space Saved</div>
+    </div>
+  </div>
+
+  <!-- PNG warning alert tip -->
+  <div id="pngWarning" style="display: none; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); color: #fbbf24; border-radius: var(--radius-md); padding: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem;">
+    💡 <strong>Pro Tip:</strong> PNG files use lossless compression. To reduce the file size significantly, change the <strong>Convert Format</strong> dropdown to <strong>WEBP</strong> or <strong>JPEG</strong>.
+  </div>
+
+  <!-- Interactive Before/After Visual Slider -->
+  <h4 style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">↔️ Drag Slider to Compare Quality</h4>
+  
+  <div id="splitCompare" style="position: relative; width: 100%; height: 450px; overflow: hidden; border-radius: var(--radius-lg); border: 1px solid var(--border-color); background: #070714;">
+    <!-- Original Image (Bottom) -->
+    <img id="originalSplit" style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: contain; pointer-events: none; z-index: 1;">
+    
+    <!-- Optimized Image (Top, Clipped) -->
+    <img id="compressedSplit" style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: contain; pointer-events: none; z-index: 2; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+    
+    <!-- Visual Divider Line -->
+    <div id="dividerLine" style="position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; background: var(--accent-purple); pointer-events: none; z-index: 3; box-shadow: 0 0 15px rgba(124,58,237,0.8); transform: translateX(-50%);"></div>
+    
+    <!-- Text Labels -->
+    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.75); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 0.8rem; pointer-events: none; border: 1px solid var(--border-color); z-index: 10;">⏪ Original</div>
+    <div style="position: absolute; top: 15px; right: 15px; background: rgba(79, 70, 229, 0.8); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 0.8rem; pointer-events: none; border: 1px solid rgba(255,255,255,0.2); z-index: 10;">Optimized ⏩</div>
+    
+    <!-- Drag range overlay -->
+    <input type="range" id="splitSlider" min="0" max="100" value="50" style="position: absolute; top:0; left:0; width:100%; height:100%; margin:0; opacity:0; cursor: ew-resize; z-index: 20;">
+  </div>
+
+  <div class="btn-group" style="margin-top: 2rem;">
+    <button id="downloadImgBtn" class="btn btn-primary btn-lg">📥 Download Optimized Image</button>
+    <button id="resetBtn" class="btn btn-secondary btn-lg">Reset & Start New</button>
+  </div>
+</div>
+
+<!-- About This Tool -->
+<div class="info-section" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">About the Image Compressor</h2>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 1rem;">Our image compressor is built with modern HTML5 canvas technology to handle image processing natively within your device. When you drag and drop an image, the browser renders the raw pixels into a memory canvas, resizes the matrix if requested, and then utilizes the browser's native encoding parameters (e.g., JPEG/WebP export quality) to generate a highly compressed data URL stream.</p>
+  <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">Because this architecture executes entirely client-side, your images are never uploaded to any cloud server. This zero-upload approach guarantees 100% data privacy for your personal photos and sensitive documents, while also operating instantly regardless of your internet connection speed.</p>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq-section" style="margin-top: 2rem;">
+  <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How can I compress images without losing quality?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">By using optimal export algorithms, our compressor analyzes the pixels in your image and safely discards data the human eye cannot easily perceive. Using WebP format or keeping JPEG quality around 80% usually results in massive file size savings (often up to 70%) with zero visible difference to the naked eye.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What is the difference between lossy and lossless compression?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Lossless compression (like standard PNGs) reduces file size without removing any pixel data, but size savings are usually minimal. Lossy compression (like JPEG and WebP) permanently removes some less important visual data to achieve dramatic file size reductions, making it much better for web delivery.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How does a browser-based image compressor work?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Instead of uploading your photo to a remote server, our tool loads your image into an invisible HTML5 canvas element directly in your browser. It then redraws the image using your chosen dimensions and uses the browser's built-in data URL encoding (toDataURL) to export it at the target quality level.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">Which image formats are supported for compression?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Our tool currently supports importing JPEG/JPG, PNG, and WebP images. You can choose to keep the original format or convert the output directly into modern, web-optimized formats like WebP.</p>
+    </details>
+    <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+      <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How does quality percentage affect file size?</summary>
+      <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">The quality percentage directly dictates how aggressively the lossy compression algorithm groups and averages pixels. A 100% setting results in a massive file. Dropping quality from 100% to 85% usually cuts the file size in half instantly, while still looking perfect. Dropping below 60% will start to show noticeable compression artifacts (blocky pixels).</p>
+    </details>
+  </div>
+</div>
+
+<!-- Related Tools -->
+<div class="related-tools" style="margin-top: 2rem; padding: 1.5rem; background: rgba(79,70,229,0.05); border: 1px solid rgba(79,70,229,0.15); border-radius: 12px;">
+  <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Related Tools You Might Like</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    <a href="color-picker.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Color Picker →</a>
+    <a href="qr-generator.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">QR Code Generator →</a>
+  </div>
+</div>
+
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar">
+          <!-- Populated by JS -->
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon">⚡</div>
+            SmartToolz<span class="gradient-text">AI</span>
+          </a>
+          <p>Free AI-powered and utility tools for everyone. No signup, no limits, no cost. Built to make your life easier.</p>
+        </div>
+        <div class="footer-column">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="ai-email-generator.html">AI Email Generator</a></li>
+            <li><a href="ai-title-generator.html">AI Title Generator</a></li>
+            <li><a href="ai-hashtag-generator.html">AI Hashtag Generator</a></li>
+            <li><a href="ai-post-generator.html">AI Post Generator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Utility Tools</h4>
+          <ul>
+            <li><a href="word-counter.html">Word Counter</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="qr-generator.html">QR Code Generator</a></li>
+            <li><a href="image-compressor.html">Image Compressor</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../pages/about.html">About Us</a></li>
+            <li><a href="../../pages/contact.html">Contact</a></li>
+            <li><a href="../../pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../pages/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. All tools are free to use.</p>
+        <p>Made with ❤️ for the world</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/image-compressor.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

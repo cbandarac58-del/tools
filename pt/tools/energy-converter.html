@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Converter — SmartToolzAI</title>
+  <meta name="description" content="Convert energy values including Joules, Calories, Kilowatt-hours, BTUs, and more.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/energy-converter.html">
+  <meta property="og:title" content="Energy Converter — SmartToolzAI">
+  <meta property="og:description" content="Convert energy values including Joules, Calories, Kilowatt-hours, BTUs, and more.">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    /* Converter-specific styles */
+    .converter-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+    .converter-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: end; margin-bottom: 1rem; }
+    .converter-input { width: 100%; padding: 0.85rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; color: var(--text-normal, #e2e8f0); font-size: 1.2rem; font-weight: 600; outline: none; }
+    .converter-input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79,70,229,0.2); }
+    .converter-select { width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; color: var(--text-normal, #e2e8f0); font-size: 0.9rem; outline: none; }
+    .converter-select option { background: #1e1e3a; }
+    .swap-btn { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #4f46e5, #7c3aed); border: none; color: white; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.3s; align-self: center; }
+    .swap-btn:hover { transform: rotate(180deg); }
+    .result-display { background: linear-gradient(135deg, rgba(79,70,229,0.1), rgba(124,58,237,0.1)); border: 1px solid rgba(79,70,229,0.3); border-radius: 12px; padding: 1.5rem; text-align: center; margin: 1rem 0; }
+    .result-display .result-value { font-size: 2rem; font-weight: 700; color: #818cf8; word-break: break-all; }
+    .result-display .result-label { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
+    .popular-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    .popular-table th { background: rgba(79,70,229,0.2); padding: 0.75rem; text-align: left; font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+    .popular-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; }
+    .popular-table tr:hover td { background: rgba(255,255,255,0.03); }
+    .unit-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
+    @media (max-width: 600px) { .converter-row { grid-template-columns: 1fr; } .swap-btn { margin: 0 auto; transform: rotate(90deg); } }
+  </style>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "WebApplication", "name": "Energy Converter", "url": "https://smarttoolzai.com/tools/energy-converter.html", "description": "Convert energy values including Joules, Calories, Kilowatt-hours, BTUs, and more.", "applicationCategory": "UtilityApplication", "operatingSystem": "All" }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many joules are in a calorie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are approximately 4.184 joules (J) in a single thermochemical calorie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I convert kilowatt-hours to joules?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To convert kilowatt-hours (kWh) to joules, multiply the kWh value by 3,600,000."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a BTU in joules?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One British Thermal Unit (BTU) is equal to approximately 1,055.06 joules."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many kilocalories are in a kilowatt-hour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One kilowatt-hour (kWh) is equivalent to approximately 859.8 kilocalories (kcal)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I convert joules to kilojoules?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To convert joules to kilojoules, simply divide the number of joules by 1,000."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/energy-converter.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/energy-converter.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/energy-converter.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/energy-converter.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/energy-converter.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/energy-converter.html" />
+
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../../pages/about.html">About</a>
+        <a href="../../pages/contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="ad-placeholder" style="min-height:90px; margin-bottom: 2rem;"><span>Ad Space</span></div>
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Energy Converter</h1>
+          <p class="tool-description">Convert energy values including Joules, Calories, Kilowatt-hours, BTUs, and more.</p>
+          
+          <div class="converter-box">
+            <div class="converter-row">
+              <div>
+                <label class="unit-label">Amount & From</label>
+                <div style="display:flex; gap: 0.5rem; margin-top: 0.25rem;">
+                  <input type="number" id="convertInput" class="converter-input" value="1" step="any" placeholder="Enter amount">
+                  <select id="fromUnit" class="converter-select" style="flex: 1;">
+                    <option value="J">Joule</option>
+                    <option value="kJ" selected>Kilojoule</option>
+                    <option value="MJ">Megajoule</option>
+                    <option value="cal">Calorie</option>
+                    <option value="kcal">Kilocalorie (kcal)</option>
+                    <option value="Wh">Watt-hour</option>
+                    <option value="kWh">Kilowatt-hour</option>
+                    <option value="eV">Electronvolt</option>
+                    <option value="BTU">BTU</option>
+                    <option value="ft_lb">Foot-pound</option>
+                    <option value="erg">Erg</option>
+                  </select>
+                </div>
+              </div>
+              <button class="swap-btn" id="swapBtn" aria-label="Swap units">↔</button>
+              <div>
+                <label class="unit-label">To</label>
+                <div style="display:flex; gap: 0.5rem; margin-top: 0.25rem;">
+                  <select id="toUnit" class="converter-select" style="width: 100%;">
+                    <option value="J">Joule</option>
+                    <option value="kJ">Kilojoule</option>
+                    <option value="MJ">Megajoule</option>
+                    <option value="cal">Calorie</option>
+                    <option value="kcal" selected>Kilocalorie (kcal)</option>
+                    <option value="Wh">Watt-hour</option>
+                    <option value="kWh">Kilowatt-hour</option>
+                    <option value="eV">Electronvolt</option>
+                    <option value="BTU">BTU</option>
+                    <option value="ft_lb">Foot-pound</option>
+                    <option value="erg">Erg</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-display">
+              <div class="result-value" id="resultValue">0.00</div>
+              <div class="result-label" id="resultLabel">Unit Name</div>
+              <button id="copyBtn" style="margin-top: 1rem; padding: 0.5rem 1rem; background: rgba(79,70,229,0.2); border: 1px solid rgba(79,70,229,0.5); border-radius: 6px; color: #818cf8; cursor: pointer; font-size: 0.85rem;">Copy Result</button>
+            </div>
+          </div>
+
+          <h3>Popular Conversions</h3>
+          <table class="popular-table">
+            <thead>
+              <tr><th>Conversion</th><th>Formula / Example</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Kilojoules to Kilocalories</td><td>1 kJ = 0.239006 kcal</td></tr>
+              <tr><td>Kilowatt-hours to Megajoules</td><td>1 kWh = 3.6 MJ</td></tr>
+              <tr><td>BTU to Kilojoules</td><td>1 BTU = 1.05506 kJ</td></tr>
+              <tr><td>Calories to Joules</td><td>1 cal = 4.184 J</td></tr>
+              <tr><td>Kilocalories to Kilojoules</td><td>1 kcal = 4.184 kJ</td></tr>
+            </tbody>
+          </table>
+
+          <!-- About This Tool -->
+          <div class="info-section" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+            <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">About the Energy Converter</h2>
+            <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">The Energy Converter is a practical tool for translating quantities of energy into different standard units, including Joules, Calories, Kilowatt-hours (kWh), and BTUs. This functionality is highly valuable for various fields such as nutritional science, electricity consumption tracking, and physics.</p>
+            <p style="color: rgba(255,255,255,0.7); line-height: 1.7; margin-top: 1rem;">By understanding the baseline conversions, it becomes easier to calculate energy usage. For instance, 1 calorie (cal) equals 4.184 Joules (J), while 1 kilocalorie (kcal) equals 4,184 J. Furthermore, electrical energy is often measured in kWh, where 1 kWh equates to 3,600,000 J or 3,412.14 BTUs. Meanwhile, 1 BTU corresponds to roughly 1,055.06 J.</p>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="faq-section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How many joules are in a calorie?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">There are approximately 4.184 joules (J) in a single thermochemical calorie.</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How do I convert kilowatt-hours to joules?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">To convert kilowatt-hours (kWh) to joules, multiply the kWh value by 3,600,000.</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What is a BTU in joules?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">One British Thermal Unit (BTU) is equal to approximately 1,055.06 joules.</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How many kilocalories are in a kilowatt-hour?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">One kilowatt-hour (kWh) is equivalent to approximately 859.8 kilocalories (kcal).</p>
+              </details>
+              <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
+                <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">How do I convert joules to kilojoules?</summary>
+                <p style="margin-top: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6;">To convert joules to kilojoules, simply divide the number of joules by 1,000.</p>
+              </details>
+            </div>
+          </div>
+
+          <!-- Related Tools -->
+          <div class="related-tools" style="margin-top: 2rem; padding: 1.5rem; background: rgba(79,70,229,0.05); border: 1px solid rgba(79,70,229,0.15); border-radius: 12px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Related Tools You Might Like</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <a href="pressure-converter.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Pressure Converter →</a>
+              <a href="temperature-converter.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Temperature Converter →</a>
+              <a href="weight-converter.html" style="padding: 0.5rem 1rem; background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3); border-radius: 20px; color: #818cf8; text-decoration: none; font-size: 0.9rem;">Weight Converter →</a>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+          <p>Free AI-powered and utility tools for everyone. No signup, no limits, no cost.</p>
+        </div>
+        <div class="footer-column"><h4>Converters</h4><ul>
+          <li><a href="length-converter.html">Length Converter</a></li>
+          <li><a href="weight-converter.html">Weight Converter</a></li>
+          <li><a href="temperature-converter.html">Temperature Converter</a></li>
+          <li><a href="energy-converter.html">Energy Converter</a></li>
+        </ul></div>
+        <div class="footer-column"><h4>AI Tools</h4><ul>
+          <li><a href="ai-email-generator.html">AI Email Generator</a></li>
+          <li><a href="ai-title-generator.html">AI Title Generator</a></li>
+          <li><a href="ai-hashtag-generator.html">AI Hashtag Generator</a></li>
+        </ul></div>
+        <div class="footer-column"><h4>Company</h4><ul>
+          <li><a href="../../pages/about.html">About Us</a></li>
+          <li><a href="../../pages/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../../pages/terms.html">Terms of Service</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SmartToolzAI. All rights reserved.</p><p>Made with ❤️ for the world</p></div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/energy-converter.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

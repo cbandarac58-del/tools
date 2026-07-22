@@ -64,32 +64,32 @@ translations = {
             ("qr-generator.html", "Generador de Código QR", "Crea códigos QR personalizados para enlaces, textos y Wi-Fi con descarga PNG.", "teal", "📱", ""),
             ("color-picker.html", "Selector de Color", "Elige colores, convierte HEX/RGB/HSL y genera paletas armoniosas.", "pink", "🎨", ""),
             ("image-compressor.html", "Compresor de Imágenes", "Comprime imágenes hasta un 80% más pequeñas sin perder calidad.", "red", "🖼️", ""),
-            ("../tools/embed-widget.html", "Generador de Widgets", "Incrusta convertidores o herramientas directamente en tu sitio web gratis.", "purple", "🧩", "✨ Nuevo")
+            ("tools/embed-widget.html", "Generador de Widgets", "Incrusta convertidores o herramientas directamente en tu sitio web gratis.", "purple", "🧩", "✨ Nuevo")
         ],
         "sec_conv": ("📐 Convertidores", "Convertidores de Unidades", "Conversiones instantáneas y precisas de longitud, peso, temperatura y más"),
         "conv_items": [
             ("length-converter.html", "Convertidor de Longitud", "Km a millas, metros a pies, cm a pulgadas al instante.", "blue", "📏", "🔥 Popular"),
-            ("../tools/weight-converter.html", "Convertidor de Peso", "Kilogramos a libras, gramos a onzas, toneladas al instante.", "green", "⚖️", ""),
-            ("../tools/temperature-converter.html", "Convertidor de Temperatura", "Celsius a Fahrenheit, Kelvin y Rankine al instante.", "orange", "🌡️", ""),
-            ("../tools/volume-converter.html", "Convertidor de Volumen", "Litros a galones, mililitros a onzas fluidas.", "purple", "🧪", ""),
-            ("../tools/area-converter.html", "Convertidor de Área", "Metros cuadrados a pies cuadrados, hectáreas a acres.", "teal", "📐", ""),
-            ("../tools/speed-converter.html", "Convertidor de Velocidad", "Km/h a mph, m/s a nudos al instante.", "red", "🚀", ""),
-            ("../tools/time-converter.html", "Convertidor de Tiempo", "Segundos, minutos, horas, días, semanas y años.", "yellow", "⏱️", ""),
-            ("../tools/data-storage-converter.html", "Convertidor de Almacenamiento", "Megabytes a Gigabytes, Terabytes a Bytes.", "blue", "💾", ""),
-            ("../tools/pressure-converter.html", "Convertidor de Presión", "Bar a PSI, Pascales a Atmósferas.", "pink", "🌡️", ""),
-            ("../tools/energy-converter.html", "Convertidor de Energía", "Julios a Calorías, Kilovatios-hora a BTU.", "green", "⚡", "")
+            ("tools/weight-converter.html", "Convertidor de Peso", "Kilogramos a libras, gramos a onzas, toneladas al instante.", "green", "⚖️", ""),
+            ("tools/temperature-converter.html", "Convertidor de Temperatura", "Celsius a Fahrenheit, Kelvin y Rankine al instante.", "orange", "🌡️", ""),
+            ("tools/volume-converter.html", "Convertidor de Volumen", "Litros a galones, mililitros a onzas fluidas.", "purple", "🧪", ""),
+            ("tools/area-converter.html", "Convertidor de Área", "Metros cuadrados a pies cuadrados, hectáreas a acres.", "teal", "📐", ""),
+            ("tools/speed-converter.html", "Convertidor de Velocidad", "Km/h a mph, m/s a nudos al instante.", "red", "🚀", ""),
+            ("tools/time-converter.html", "Convertidor de Tiempo", "Segundos, minutos, horas, días, semanas y años.", "yellow", "⏱️", ""),
+            ("tools/data-storage-converter.html", "Convertidor de Almacenamiento", "Megabytes a Gigabytes, Terabytes a Bytes.", "blue", "💾", ""),
+            ("tools/pressure-converter.html", "Convertidor de Presión", "Bar a PSI, Pascales a Atmósferas.", "pink", "🌡️", ""),
+            ("tools/energy-converter.html", "Convertidor de Energía", "Julios a Calorías, Kilovatios-hora a BTU.", "green", "⚡", "")
         ],
         "sec_ai": ("🤖 Herramientas IA", "Generadores de Texto con IA", "Herramientas impulsadas por plantillas inteligentes para contenido rápido"),
         "ai_items": [
-            ("../tools/ai-email-generator.html", "Generador de Emails IA", "Crea correos profesionales y efectivos para cualquier ocasión.", "purple", "📧", "✨ IA"),
-            ("../tools/ai-title-generator.html", "Generador de Títulos IA", "Genera títulos atractivos y optimizados para blogs y artículos.", "blue", "✍️", "✨ IA"),
-            ("../tools/ai-paragraph-rewriter.html", "Reescritor de Párrafos", "Reescribe y mejora tus párrafos con diferentes tonos.", "green", "📝", "✨ IA"),
-            ("../tools/ai-bio-generator.html", "Generador de Bio Social", "Crea biografías atractivas para Instagram, X y LinkedIn.", "pink", "👤", "✨ IA"),
-            ("../tools/ai-business-name-generator.html", "Generador de Nombres de Marca", "Encuentra nombres de empresas creativos para tu proyecto.", "orange", "💡", "✨ IA"),
-            ("../tools/ai-slogan-generator.html", "Generador de Slogans", "Genera eslóganes pegajosos para tu marca.", "teal", "📢", "✨ IA"),
-            ("../tools/ai-meta-description-generator.html", "Meta Descripciones IA", "Genera meta descripciones optimizadas para SEO.", "red", "🔍", "✨ IA"),
-            ("../tools/ai-hashtag-generator.html", "Generador de Hashtags", "Encuentra los mejores hashtags virales para tus redes.", "purple", "#️⃣", "✨ IA"),
-            ("../tools/ai-post-generator.html", "Generador de Publicaciones", "Crea posts atractivos para Twitter, LinkedIn e Instagram.", "blue", "📱", "✨ IA")
+            ("tools/ai-email-generator.html", "Generador de Emails IA", "Crea correos profesionales y efectivos para cualquier ocasión.", "purple", "📧", "✨ IA"),
+            ("tools/ai-title-generator.html", "Generador de Títulos IA", "Genera títulos atractivos y optimizados para blogs y artículos.", "blue", "✍️", "✨ IA"),
+            ("tools/ai-paragraph-rewriter.html", "Reescritor de Párrafos", "Reescribe y mejora tus párrafos con diferentes tonos.", "green", "📝", "✨ IA"),
+            ("tools/ai-bio-generator.html", "Generador de Bio Social", "Crea biografías atractivas para Instagram, X y LinkedIn.", "pink", "👤", "✨ IA"),
+            ("tools/ai-business-name-generator.html", "Generador de Nombres de Marca", "Encuentra nombres de empresas creativos para tu proyecto.", "orange", "💡", "✨ IA"),
+            ("tools/ai-slogan-generator.html", "Generador de Slogans", "Genera eslóganes pegajosos para tu marca.", "teal", "📢", "✨ IA"),
+            ("tools/ai-meta-description-generator.html", "Meta Descripciones IA", "Genera meta descripciones optimizadas para SEO.", "red", "🔍", "✨ IA"),
+            ("tools/ai-hashtag-generator.html", "Generador de Hashtags", "Encuentra los mejores hashtags virales para tus redes.", "purple", "#️⃣", "✨ IA"),
+            ("tools/ai-post-generator.html", "Generador de Publicaciones", "Crea posts atractivos para Twitter, LinkedIn e Instagram.", "blue", "📱", "✨ IA")
         ]
     },
     "pt": {
@@ -108,39 +108,39 @@ translations = {
         "sec_util": ("🔧 Utilitários Web", "Utilitários Web Grátis", "Ferramentas essenciais para texto, desenvolvimento, design e imagens"),
         "util_items": [
             ("word-counter.html", "Contador de Palavras", "Contagem em tempo real de palavras, caracteres e parágrafos.", "blue", "📝", "🔥 Popular"),
-            ("../tools/password-generator.html", "Gerador de Senhas", "Crie senhas seguras e aleatórias com comprimento personalizável.", "green", "🔐", ""),
-            ("../tools/case-converter.html", "Conversor de Maiúsculas", "Converta texto para MAIÚSCULAS, minúsculas e camelCase.", "purple", "🔤", ""),
-            ("../tools/age-calculator.html", "Calculadora de Idade", "Calcule sua idade exata em anos, meses e dias.", "orange", "🎂", ""),
-            ("../tools/lorem-generator.html", "Gerador Lorem Ipsum", "Gere texto Lorem Ipsum personalizado para design.", "blue", "📄", ""),
-            ("../tools/qr-generator.html", "Gerador de Código QR", "Crie códigos QR personalizados para links e texto.", "teal", "📱", ""),
-            ("../tools/color-picker.html", "Seletor de Cores", "Escolha cores, converta HEX/RGB/HSL e crie paletas.", "pink", "🎨", ""),
-            ("../tools/image-compressor.html", "Compressor de Imagens", "Comprima imagens até 80% menores sem perder qualidade.", "red", "🖼️", ""),
-            ("../tools/embed-widget.html", "Gerador de Widgets", "Incorpore conversores no seu site gratuitamente.", "purple", "🧩", "✨ Novo")
+            ("tools/password-generator.html", "Gerador de Senhas", "Crie senhas seguras e aleatórias com comprimento personalizável.", "green", "🔐", ""),
+            ("tools/case-converter.html", "Conversor de Maiúsculas", "Converta texto para MAIÚSCULAS, minúsculas e camelCase.", "purple", "🔤", ""),
+            ("tools/age-calculator.html", "Calculadora de Idade", "Calcule sua idade exata em anos, meses e dias.", "orange", "🎂", ""),
+            ("tools/lorem-generator.html", "Gerador Lorem Ipsum", "Gere texto Lorem Ipsum personalizado para design.", "blue", "📄", ""),
+            ("tools/qr-generator.html", "Gerador de Código QR", "Crie códigos QR personalizados para links e texto.", "teal", "📱", ""),
+            ("tools/color-picker.html", "Seletor de Cores", "Escolha cores, converta HEX/RGB/HSL e crie paletas.", "pink", "🎨", ""),
+            ("tools/image-compressor.html", "Compressor de Imagens", "Comprima imagens até 80% menores sem perder qualidade.", "red", "🖼️", ""),
+            ("tools/embed-widget.html", "Gerador de Widgets", "Incorpore conversores no seu site gratuitamente.", "purple", "🧩", "✨ Novo")
         ],
         "sec_conv": ("📐 Conversores", "Conversores de Unidades", "Conversões instantâneas de comprimento, peso, temperatura e mais"),
         "conv_items": [
             ("length-converter.html", "Conversor de Comprimento", "Km para milhas, metros para pés, cm para polegadas.", "blue", "📏", "🔥 Popular"),
-            ("../tools/weight-converter.html", "Conversor de Peso", "Quilogramas para libras, gramas para onças.", "green", "⚖️", ""),
-            ("../tools/temperature-converter.html", "Conversor de Temperatura", "Celsius para Fahrenheit e Kelvin instantaneamente.", "orange", "🌡️", ""),
-            ("../tools/volume-converter.html", "Conversor de Volume", "Litros para galões, mililitros para onças fluidas.", "purple", "🧪", ""),
-            ("../tools/area-converter.html", "Conversor de Área", "Metros quadrados para pés quadrados, hectares para acres.", "teal", "📐", ""),
-            ("../tools/speed-converter.html", "Conversor de Velocidade", "Km/h para mph, m/s para nós.", "red", "🚀", ""),
-            ("../tools/time-converter.html", "Conversor de Tempo", "Segundos, minutos, horas, dias e anos.", "yellow", "⏱️", ""),
-            ("../tools/data-storage-converter.html", "Conversor de Armazenamento", "Megabytes para Gigabytes, Terabytes para Bytes.", "blue", "💾", ""),
-            ("../tools/pressure-converter.html", "Conversor de Pressão", "Bar para PSI, Pascais para Atmosferas.", "pink", "🌡️", ""),
-            ("../tools/energy-converter.html", "Conversor de Energia", "Joules para Calorias, Quilowatts-hora para BTU.", "green", "⚡", "")
+            ("tools/weight-converter.html", "Conversor de Peso", "Quilogramas para libras, gramas para onças.", "green", "⚖️", ""),
+            ("tools/temperature-converter.html", "Conversor de Temperatura", "Celsius para Fahrenheit e Kelvin instantaneamente.", "orange", "🌡️", ""),
+            ("tools/volume-converter.html", "Conversor de Volume", "Litros para galões, mililitros para onças fluidas.", "purple", "🧪", ""),
+            ("tools/area-converter.html", "Conversor de Área", "Metros quadrados para pés quadrados, hectares para acres.", "teal", "📐", ""),
+            ("tools/speed-converter.html", "Conversor de Velocidade", "Km/h para mph, m/s para nós.", "red", "🚀", ""),
+            ("tools/time-converter.html", "Conversor de Tempo", "Segundos, minutos, horas, dias e anos.", "yellow", "⏱️", ""),
+            ("tools/data-storage-converter.html", "Conversor de Armazenamento", "Megabytes para Gigabytes, Terabytes para Bytes.", "blue", "💾", ""),
+            ("tools/pressure-converter.html", "Conversor de Pressão", "Bar para PSI, Pascais para Atmosferas.", "pink", "🌡️", ""),
+            ("tools/energy-converter.html", "Conversor de Energia", "Joules para Calorias, Quilowatts-hora para BTU.", "green", "⚡", "")
         ],
         "sec_ai": ("🤖 Ferramentas IA", "Geradores de Texto com IA", "Ferramentas inteligentes para criação rápida de conteúdo"),
         "ai_items": [
-            ("../tools/ai-email-generator.html", "Gerador de E-mails IA", "Crie e-mails profissionais e eficazes.", "purple", "📧", "✨ IA"),
-            ("../tools/ai-title-generator.html", "Gerador de Títulos IA", "Gere títulos atraentes para blogs e artigos.", "blue", "✍️", "✨ IA"),
-            ("../tools/ai-paragraph-rewriter.html", "Reescritor de Parágrafos", "Reescreva e melhore seus parágrafos.", "green", "📝", "✨ IA"),
-            ("../tools/ai-bio-generator.html", "Gerador de Bio Social", "Crie biografias atraentes para redes sociais.", "pink", "👤", "✨ IA"),
-            ("../tools/ai-business-name-generator.html", "Gerador de Nomes de Marca", "Encontre nomes criativos para sua empresa.", "orange", "💡", "✨ IA"),
-            ("../tools/ai-slogan-generator.html", "Gerador de Slogans", "Gere slogans marcantes para sua marca.", "teal", "📢", "✨ IA"),
-            ("../tools/ai-meta-description-generator.html", "Meta Descrições IA", "Gere meta descrições otimizadas para SEO.", "red", "🔍", "✨ IA"),
-            ("../tools/ai-hashtag-generator.html", "Gerador de Hashtags", "Encontre as melhores hashtags para suas redes.", "purple", "#️⃣", "✨ IA"),
-            ("../tools/ai-post-generator.html", "Gerador de Publicações", "Crie posts incríveis para redes sociais.", "blue", "📱", "✨ IA")
+            ("tools/ai-email-generator.html", "Gerador de E-mails IA", "Crie e-mails profissionais e eficazes.", "purple", "📧", "✨ IA"),
+            ("tools/ai-title-generator.html", "Gerador de Títulos IA", "Gere títulos atraentes para blogs e artigos.", "blue", "✍️", "✨ IA"),
+            ("tools/ai-paragraph-rewriter.html", "Reescritor de Parágrafos", "Reescreva e melhore seus parágrafos.", "green", "📝", "✨ IA"),
+            ("tools/ai-bio-generator.html", "Gerador de Bio Social", "Crie biografias atraentes para redes sociais.", "pink", "👤", "✨ IA"),
+            ("tools/ai-business-name-generator.html", "Gerador de Nomes de Marca", "Encontre nomes criativos para sua empresa.", "orange", "💡", "✨ IA"),
+            ("tools/ai-slogan-generator.html", "Gerador de Slogans", "Gere slogans marcantes para sua marca.", "teal", "📢", "✨ IA"),
+            ("tools/ai-meta-description-generator.html", "Meta Descrições IA", "Gere meta descrições otimizadas para SEO.", "red", "🔍", "✨ IA"),
+            ("tools/ai-hashtag-generator.html", "Gerador de Hashtags", "Encontre as melhores hashtags para suas redes.", "purple", "#️⃣", "✨ IA"),
+            ("tools/ai-post-generator.html", "Gerador de Publicações", "Crie posts incríveis para redes sociais.", "blue", "📱", "✨ IA")
         ]
     },
     "ja": {
@@ -159,39 +159,39 @@ translations = {
         "sec_util": ("🔧 便利ツール", "無料Webユーティリティ", "テキスト作成、開発、デザイン、画像処理に役立つ便利ツール"),
         "util_items": [
             ("word-counter.html", "無料文字数カウント", "リアルタイムで文字数・単語数・行数をカウント。読了時間も一瞬で分析。", "blue", "📝", "🔥 人気"),
-            ("../tools/password-generator.html", "パスワード自動生成", "解読不可能な強固なパスワードを即座に自動生成。", "green", "🔐", ""),
-            ("../tools/case-converter.html", "大文字小文字 変換", "大文字、小文字、キャメルケースなどを一瞬で変換。", "purple", "🔤", ""),
-            ("../tools/age-calculator.html", "年齢・日数計算", "正確な年齢、生後日数、次の誕生日カウントダウンを計算。", "orange", "🎂", ""),
-            ("../tools/lorem-generator.html", "ダミーテキスト作成", "デザイン用のLorem Ipsumダミーテキストを生成。", "blue", "📄", ""),
-            ("../tools/qr-generator.html", "QRコード作成", "URLやテキストから無料でカスタムQRコードを作成・保存。", "teal", "📱", ""),
-            ("../tools/color-picker.html", "カラーピッカー", "HEX/RGB/HSL変換と配色パレット生成。", "pink", "🎨", ""),
-            ("../tools/image-compressor.html", "画像圧縮ツール", "画像を画質を保ったまま最大80%軽量化。", "red", "🖼️", ""),
-            ("../tools/embed-widget.html", "埋め込みウィジェット生成", "あなたのサイトに各種ツールを無料で埋め込み。", "purple", "🧩", "✨ NEW")
+            ("tools/password-generator.html", "パスワード自動生成", "解読不可能な強固なパスワードを即座に自動生成。", "green", "🔐", ""),
+            ("tools/case-converter.html", "大文字小文字 変換", "大文字、小文字、キャメルケースなどを一瞬で変換。", "purple", "🔤", ""),
+            ("tools/age-calculator.html", "年齢・日数計算", "正確な年齢、生後日数、次の誕生日カウントダウンを計算。", "orange", "🎂", ""),
+            ("tools/lorem-generator.html", "ダミーテキスト作成", "デザイン用のLorem Ipsumダミーテキストを生成。", "blue", "📄", ""),
+            ("tools/qr-generator.html", "QRコード作成", "URLやテキストから無料でカスタムQRコードを作成・保存。", "teal", "📱", ""),
+            ("tools/color-picker.html", "カラーピッカー", "HEX/RGB/HSL変換と配色パレット生成。", "pink", "🎨", ""),
+            ("tools/image-compressor.html", "画像圧縮ツール", "画像を画質を保ったまま最大80%軽量化。", "red", "🖼️", ""),
+            ("tools/embed-widget.html", "埋め込みウィジェット生成", "あなたのサイトに各種ツールを無料で埋め込み。", "purple", "🧩", "✨ NEW")
         ],
         "sec_conv": ("📐 単位換算", "高精度 単位換算ツール", "長さ、重さ、温度、速度、データ容量などの即時換算"),
         "conv_items": [
             ("length-converter.html", "長さ・距離換算", "km、マイル、メートル、フィート、インチを一瞬で正確に単位換算。", "blue", "📏", "🔥 人気"),
-            ("../tools/weight-converter.html", "重さ・質量換算", "kg、ポンド、グラム、オンス、トンを即座に換算。", "green", "⚖️", ""),
-            ("../tools/temperature-converter.html", "温度換算", "摂氏(℃)、華氏(℉)、ケルビン(K)を相互換算。", "orange", "🌡️", ""),
-            ("../tools/volume-converter.html", "体積・容量換算", "リットル、ガロン、ミリリットル、オンスを換算。", "purple", "🧪", ""),
-            ("../tools/area-converter.html", "面積換算", "平方メートル、坪、ヘクタール、エーカーを換算。", "teal", "📐", ""),
-            ("../tools/speed-converter.html", "速度換算", "km/h、mph、m/s、ノットを即座に換算。", "red", "🚀", ""),
-            ("../tools/time-converter.html", "時間換算", "秒、分、時間、日、週、年を換算。", "yellow", "⏱️", ""),
-            ("../tools/data-storage-converter.html", "データ容量換算", "MB、GB、TB、Byteを正確に換算。", "blue", "💾", ""),
-            ("../tools/pressure-converter.html", "圧力換算", "bar、PSI、Pa、気圧(atm)を換算。", "pink", "🌡️", ""),
-            ("../tools/energy-converter.html", "エネルギー換算", "ジュール、カロリー、kWh、BTUを換算。", "green", "⚡", "")
+            ("tools/weight-converter.html", "重さ・質量換算", "kg、ポンド、グラム、オンス、トンを即座に換算。", "green", "⚖️", ""),
+            ("tools/temperature-converter.html", "温度換算", "摂氏(℃)、華氏(℉)、ケルビン(K)を相互換算。", "orange", "🌡️", ""),
+            ("tools/volume-converter.html", "体積・容量換算", "リットル、ガロン、ミリリットル、オンスを換算。", "purple", "🧪", ""),
+            ("tools/area-converter.html", "面積換算", "平方メートル、坪、ヘクタール、エーカーを換算。", "teal", "📐", ""),
+            ("tools/speed-converter.html", "速度換算", "km/h、mph、m/s、ノットを即座に換算。", "red", "🚀", ""),
+            ("tools/time-converter.html", "時間換算", "秒、分、時間、日、週、年を換算。", "yellow", "⏱️", ""),
+            ("tools/data-storage-converter.html", "データ容量換算", "MB、GB、TB、Byteを正確に換算。", "blue", "💾", ""),
+            ("tools/pressure-converter.html", "圧力換算", "bar、PSI、Pa、気圧(atm)を換算。", "pink", "🌡️", ""),
+            ("tools/energy-converter.html", "エネルギー換算", "ジュール、カロリー、kWh、BTUを換算。", "green", "⚡", "")
         ],
         "sec_ai": ("🤖 AIツール", "AI文章作成・生成ツール", "テンプレートベースのスマートAI文章生成"),
         "ai_items": [
-            ("../tools/ai-email-generator.html", "AIメール作成", "ビジネスメールや返信文をAIが自動作成。", "purple", "📧", "✨ AI"),
-            ("../tools/ai-title-generator.html", "AIブログ記事タイトル作成", "読まれる魅力的な記事タイトルを10案生成。", "blue", "✍️", "✨ AI"),
-            ("../tools/ai-paragraph-rewriter.html", "AI文章リライト", "文章を読みやすく自然な表現にリライト。", "green", "📝", "✨ AI"),
-            ("../tools/ai-bio-generator.html", "AIプロフィール作成", "SNS用の魅力的な自己紹介文を自動生成。", "pink", "👤", "✨ AI"),
-            ("../tools/ai-business-name-generator.html", "AIネーミング作成", "ブランドやサービスの名称アイデアを生成。", "orange", "💡", "✨ AI"),
-            ("../tools/ai-slogan-generator.html", "AIスローガン作成", "耳に残るキャッチコピー・スローガンを作成。", "teal", "📢", "✨ AI"),
-            ("../tools/ai-meta-description-generator.html", "AI Meta説明文作成", "SEOに最適なメタディスクリプションを生成。", "red", "🔍", "✨ AI"),
-            ("../tools/ai-hashtag-generator.html", "AIハッシュタグ生成", "バズる最適ハッシュタグを自動抽出。", "purple", "#️⃣", "✨ AI"),
-            ("../tools/ai-post-generator.html", "AI SNS投稿作成", "Twitter, Instagram, LinkedIn用の投稿を作成。", "blue", "📱", "✨ AI")
+            ("tools/ai-email-generator.html", "AIメール作成", "ビジネスメールや返信文をAIが自動作成。", "purple", "📧", "✨ AI"),
+            ("tools/ai-title-generator.html", "AIブログ記事タイトル作成", "読まれる魅力的な記事タイトルを10案生成。", "blue", "✍️", "✨ AI"),
+            ("tools/ai-paragraph-rewriter.html", "AI文章リライト", "文章を読みやすく自然な表現にリライト。", "green", "📝", "✨ AI"),
+            ("tools/ai-bio-generator.html", "AIプロフィール作成", "SNS用の魅力的な自己紹介文を自動生成。", "pink", "👤", "✨ AI"),
+            ("tools/ai-business-name-generator.html", "AIネーミング作成", "ブランドやサービスの名称アイデアを生成。", "orange", "💡", "✨ AI"),
+            ("tools/ai-slogan-generator.html", "AIスローガン作成", "耳に残るキャッチコピー・スローガンを作成。", "teal", "📢", "✨ AI"),
+            ("tools/ai-meta-description-generator.html", "AI Meta説明文作成", "SEOに最適なメタディスクリプションを生成。", "red", "🔍", "✨ AI"),
+            ("tools/ai-hashtag-generator.html", "AIハッシュタグ生成", "バズる最適ハッシュタグを自動抽出。", "purple", "#️⃣", "✨ AI"),
+            ("tools/ai-post-generator.html", "AI SNS投稿作成", "Twitter, Instagram, LinkedIn用の投稿を作成。", "blue", "📱", "✨ AI")
         ]
     }
 }
