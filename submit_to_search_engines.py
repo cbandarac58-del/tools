@@ -44,6 +44,7 @@ ALL_URLS = [
     "https://smarttoolzai.com/tools/qr-generator.html",
     "https://smarttoolzai.com/tools/color-picker.html",
     "https://smarttoolzai.com/tools/image-compressor.html",
+    "https://smarttoolzai.com/tools/embed-widget.html",
     # Unit Converters
     "https://smarttoolzai.com/tools/length-converter.html",
     "https://smarttoolzai.com/tools/weight-converter.html",
