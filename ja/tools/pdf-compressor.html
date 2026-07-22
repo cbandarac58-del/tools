@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料PDF圧縮ツール (容量制限なし・完全ローカル処理) — SmartToolzAI</title>
+    <meta name="description" content="PDFファイルを画質を損なわずに無料圧縮。ファイル送信なし・100%ローカル処理で安心・安全。">
+    <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/pdf-compressor.html" />
+    <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/pdf-compressor.html" />
+    <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/pdf-compressor.html" />
+    <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/pdf-compressor.html" />
+    <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/pdf-compressor.html" />
+    <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/pdf-compressor.html" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "PDF圧縮は安全ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、ファイルはサーバーにアップロードされず、お使いのブラウザ上でローカルに処理されるため安全です。"
+        }
+      }]
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/ja/">SmartToolzAI</a>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <h1 class="mb-4">PDF圧縮</h1>
+        <p>PDFファイルを画質を損なわずに無料圧縮します。完全ローカル処理で安全です。</p>
+        
+        <div id="dropzone" class="border p-5 text-center mb-4">
+            ここにPDFをドラッグ＆ドロップするか、クリックしてファイルを選択してください
+            <input type="file" id="pdfInput" class="d-none" accept=".pdf">
+        </div>
+        <button id="btnCompress" class="btn btn-primary w-100 mb-4">圧縮する</button>
+
+        <section class="faq-section mt-5">
+            <h2>よくある質問 (FAQ)</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            PDF圧縮は安全ですか？
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            はい、ファイルはサーバーにアップロードされず、お使いのブラウザ上でローカルに処理されるため安全です。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-section mt-5">
+            <h2>このツールについて</h2>
+            <p>PDF圧縮ツールは、ファイルの画質を保ったままファイルサイズを削減するためのツールです。オンライン上ではなく、あなたのデバイス内で直接処理されます。</p>
+        </section>
+    </main>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/tools/pdf-compressor.js"></script>
+</body>
+</html>

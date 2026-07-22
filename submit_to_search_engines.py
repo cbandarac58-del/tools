@@ -75,6 +75,29 @@ ALL_URLS = [
     "https://smarttoolzai.com/blog/inches-to-cm.html",
     "https://smarttoolzai.com/blog/psi-to-bar.html",
     "https://smarttoolzai.com/blog/calories-to-joules.html",
+    # Spanish (es/)
+    "https://smarttoolzai.com/es/index.html",
+    "https://smarttoolzai.com/es/tools/pdf-compressor.html",
+    "https://smarttoolzai.com/es/tools/pdf-merger.html",
+    "https://smarttoolzai.com/es/tools/word-counter.html",
+    "https://smarttoolzai.com/es/tools/length-converter.html",
+    # Portuguese (pt/)
+    "https://smarttoolzai.com/pt/index.html",
+    "https://smarttoolzai.com/pt/tools/pdf-compressor.html",
+    "https://smarttoolzai.com/pt/tools/pdf-merger.html",
+    "https://smarttoolzai.com/pt/tools/word-counter.html",
+    "https://smarttoolzai.com/pt/tools/length-converter.html",
+    # Japanese (ja/)
+    "https://smarttoolzai.com/ja/index.html",
+    "https://smarttoolzai.com/ja/tools/pdf-compressor.html",
+    "https://smarttoolzai.com/ja/tools/pdf-merger.html",
+    "https://smarttoolzai.com/ja/tools/word-counter.html",
+    "https://smarttoolzai.com/ja/tools/length-converter.html",
+    # German (de/) & French (fr/)
+    "https://smarttoolzai.com/de/index.html",
+    "https://smarttoolzai.com/de/tools/pdf-compressor.html",
+    "https://smarttoolzai.com/fr/index.html",
+    "https://smarttoolzai.com/fr/tools/pdf-compressor.html",
 ]
 
 # ===========================

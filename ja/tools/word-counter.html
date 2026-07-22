@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料文字数カウントツール (リアルタイム計算) — SmartToolzAI</title>
+    <meta name="description" content="リアルタイムで文字数・単語数・行数をカウント。読了時間やキーワード密度も一瞬で分析。">
+    <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/word-counter.html" />
+    <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/word-counter.html" />
+    <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/word-counter.html" />
+    <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/word-counter.html" />
+    <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/word-counter.html" />
+    <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/word-counter.html" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "文字数カウントは日本語に対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、日本語の文字数や英語の単語数など、様々な言語にリアルタイムで対応しています。"
+        }
+      }]
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/ja/">SmartToolzAI</a>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <h1 class="mb-4">文字数カウント</h1>
+        <p>入力したテキストの文字数、単語数、行数を瞬時にカウントします。</p>
+        
+        <textarea id="textInput" class="form-control mb-3" rows="10" placeholder="ここにテキストを入力またはペーストしてください..."></textarea>
+        
+        <div class="row text-center mb-4">
+            <div class="col-4">
+                <div class="border p-3 rounded">
+                    <h4>文字数</h4>
+                    <span id="charCount" class="fs-2">0</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="border p-3 rounded">
+                    <h4>単語数</h4>
+                    <span id="wordCount" class="fs-2">0</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="border p-3 rounded">
+                    <h4>行数</h4>
+                    <span id="lineCount" class="fs-2">0</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="faq-section mt-5">
+            <h2>よくある質問 (FAQ)</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            文字数カウントは日本語に対応していますか？
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            はい、日本語の文字数や英語の単語数など、様々な言語にリアルタイムで対応しています。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section mt-5">
+            <h2>このツールについて</h2>
+            <p>ブログ記事、エッセイ、レポートなどを作成する際に、リアルタイムで文字数や単語数を把握できる無料ツールです。読了時間の目安も確認できます。</p>
+        </section>
+    </main>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/tools/word-counter.js"></script>
+</body>
+</html>

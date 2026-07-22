@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料長さ・距離換算ツール (km, マイル, メートル) — SmartToolzAI</title>
+    <meta name="description" content="km、マイル、メートル、フィート、インチを一瞬で正確に単位換算。">
+    <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/length-converter.html" />
+    <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/length-converter.html" />
+    <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/length-converter.html" />
+    <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/length-converter.html" />
+    <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/length-converter.html" />
+    <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/length-converter.html" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "どのような単位に対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "メートル、キロメートル、センチメートル、マイル、ヤード、フィート、インチなどの主要な長さ単位に対応しています。"
+        }
+      }]
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/ja/">SmartToolzAI</a>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <h1 class="mb-4">長さ・距離換算</h1>
+        <p>様々な長さや距離の単位を瞬時に換算します。</p>
+        
+        <div class="row mb-4">
+            <div class="col-md-5">
+                <input type="number" id="inputValue" class="form-control" placeholder="数値を入力">
+                <select id="inputUnit" class="form-select mt-2">
+                    <option value="m">メートル (m)</option>
+                    <option value="km">キロメートル (km)</option>
+                    <option value="cm">センチメートル (cm)</option>
+                    <option value="mi">マイル (mi)</option>
+                    <option value="ft">フィート (ft)</option>
+                    <option value="in">インチ (in)</option>
+                </select>
+            </div>
+            <div class="col-md-2 text-center d-flex align-items-center justify-content-center">
+                <span class="fs-2">=</span>
+            </div>
+            <div class="col-md-5">
+                <input type="text" id="outputValue" class="form-control" readonly placeholder="結果">
+                <select id="outputUnit" class="form-select mt-2">
+                    <option value="m">メートル (m)</option>
+                    <option value="km" selected>キロメートル (km)</option>
+                    <option value="cm">センチメートル (cm)</option>
+                    <option value="mi">マイル (mi)</option>
+                    <option value="ft">フィート (ft)</option>
+                    <option value="in">インチ (in)</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="faq-section mt-5">
+            <h2>よくある質問 (FAQ)</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            どのような単位に対応していますか？
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            メートル、キロメートル、センチメートル、マイル、ヤード、フィート、インチなどの主要な長さ単位に対応しています。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section mt-5">
+            <h2>このツールについて</h2>
+            <p>長さ・距離換算ツールは、海外の単位や日常的な距離の計算を素早く正確に行うための無料オンラインツールです。入力と同時にリアルタイムで結果が表示されます。</p>
+        </section>
+    </main>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/tools/length-converter.js"></script>
+</body>
+</html>
