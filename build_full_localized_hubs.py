@@ -48,6 +48,7 @@ translations = {
         "hero_h1": 'Potencia tu Trabajo con <span class="gradient-text">Herramientas IA</span> y Utilidades',
         "hero_p": "herramientas gratis online. 100% privado, procesamiento local en tu navegador.",
         "search_ph": "Buscar herramientas... (PDF, contar palabras, conversor)",
+        "stats": ["Herramientas Gratis", "100% Privado Local", "0s Espera Servidor"],
         "nav": ["Herramientas PDF", "Convertidores", "Herramientas IA", "Utilidades"],
         "sec_pdf": ("📄 Herramientas PDF", "Herramientas PDF Gratis", "Procesamiento 100% local sin subir archivos a servidores"),
         "pdf_items": [
@@ -99,6 +100,7 @@ translations = {
         "hero_h1": 'Aumente sua Produtividade com <span class="gradient-text">Ferramentas de IA</span>',
         "hero_p": "ferramentas online grátis. 100% privado, processamento local no seu navegador.",
         "search_ph": "Buscar ferramentas... (PDF, contar palavras, conversor)",
+        "stats": ["Ferramentas Grátis", "100% Privado Local", "0s Espera Servidor"],
         "nav": ["Ferramentas PDF", "Conversores", "Ferramentas IA", "Utilitários"],
         "sec_pdf": ("📄 Ferramentas PDF", "Ferramentas PDF Grátis", "Processamento 100% local sem enviar arquivos para servidores"),
         "pdf_items": [
@@ -150,6 +152,7 @@ translations = {
         "hero_h1": '<span class="gradient-text">AI＆便利Webツール</span>で作業を圧倒的に効率化',
         "hero_p": "種類以上のWebツールが完全無料。ブラウザ内での100%ローカル処理で安心安全。",
         "search_ph": "ツールを検索... (例: PDF, 文字数, 単位換算)",
+        "stats": ["無料Webツール", "100%ローカル処理", "0秒 サーバー待ちなし"],
         "nav": ["PDFツール", "単位換算", "AIツール", "ユーティリティ"],
         "sec_pdf": ("📄 PDFツール集", "無料PDFツール集", "ファイル送信ゼロ！お使いのブラウザ内での完全ローカル処理"),
         "pdf_items": [
@@ -204,6 +207,7 @@ translations["de"]["badge"] = "100% Kostenlos — Keine Anmeldung Erforderlich"
 translations["de"]["hero_h1"] = 'Steigern Sie Ihre Arbeit mit <span class="gradient-text">KI-Tools</span>'
 translations["de"]["hero_p"] = "kostenlose Online-Tools. 100% privat, lokale Verarbeitung in Ihrem Browser."
 translations["de"]["search_ph"] = "Tools suchen..."
+translations["de"]["stats"] = ["Kostenlose Tools", "100% Lokal & Privat", "0s Server-Wartezeit"]
 
 translations["fr"] = translations["es"].copy()
 translations["fr"]["title"] = "Outils IA et Utilitaires En Ligne Gratuits — SmartToolzAI"
@@ -212,6 +216,7 @@ translations["fr"]["badge"] = "100% Gratuit — Sans Inscription Requise"
 translations["fr"]["hero_h1"] = 'Boostez Votre Travail Avec Nos <span class="gradient-text">Outils IA</span>'
 translations["fr"]["hero_p"] = "outils en ligne gratuits. 100% privé, traitement local dans votre navigateur."
 translations["fr"]["search_ph"] = "Rechercher des outils..."
+translations["fr"]["stats"] = ["Outils Gratuits", "100% Privé & Local", "0s Attente Serveur"]
 
 def build_cards_html(items):
     cards = []
@@ -264,15 +269,15 @@ for lang, d in translations.items():
         <div class="hero-stats">
           <div class="hero-stat">
             <div class="stat-number" id="counterTools">30+</div>
-            <div class="stat-label">Free Tools</div>
+            <div class="stat-label">{d["stats"][0]}</div>
           </div>
           <div class="hero-stat">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Client-Side Private</div>
+            <div class="stat-label">{d["stats"][1]}</div>
           </div>
           <div class="hero-stat">
             <div class="stat-number">0s</div>
-            <div class="stat-label">Server Wait</div>
+            <div class="stat-label">{d["stats"][2]}</div>
           </div>
         </div>
       </div>
