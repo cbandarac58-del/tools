@@ -51,24 +51,24 @@ translations = {
         "nav": ["Herramientas PDF", "Convertidores", "Herramientas IA", "Utilidades"],
         "sec_pdf": ("📄 Herramientas PDF", "Herramientas PDF Gratis", "Procesamiento 100% local sin subir archivos a servidores"),
         "pdf_items": [
-            ("pdf-compressor.html", "Compresor de PDF Gratis", "Comprimir archivos PDF gratis online sin perder calidad. 100% privado y sin límites.", "red", "📉", "🔥 Popular"),
-            ("pdf-merger.html", "Unir PDF Gratis", "Combinar varios archivos PDF en un solo documento. Reordenar páginas e instantáneo.", "blue", "📑", "🔥 Popular")
+            ("tools/pdf-compressor.html", "Compresor de PDF Gratis", "Comprimir archivos PDF gratis online sin perder calidad. 100% privado y sin límites.", "red", "📉", "🔥 Popular"),
+            ("tools/pdf-merger.html", "Unir PDF Gratis", "Combinar varios archivos PDF en un solo documento. Reordenar páginas e instantáneo.", "blue", "📑", "🔥 Popular")
         ],
         "sec_util": ("🔧 Utilidades Web", "Utilidades Web Gratis", "Herramientas esenciales para texto, desarrollo, diseño e imágenes"),
         "util_items": [
-            ("word-counter.html", "Contador de Palabras", "Conteo en tiempo real de palabras, caracteres y párrafos. Análisis de densidad de palabras clave.", "blue", "📝", "🔥 Popular"),
-            ("password-generator.html", "Generador de Contraseñas", "Crea contraseñas seguras y aleatorias con longitud personalizable.", "green", "🔐", ""),
-            ("case-converter.html", "Convertidor de Mayúsculas", "Convierte texto a MAYÚSCULAS, minúsculas, Title Case, camelCase y snake_case.", "purple", "🔤", ""),
-            ("age-calculator.html", "Calculadora de Edad", "Calcula tu edad exacta en años, meses, días, horas y cuenta regresiva de cumpleaños.", "orange", "🎂", ""),
-            ("lorem-generator.html", "Generador Lorem Ipsum", "Genera texto de relleno Lorem Ipsum personalizado para diseño y desarrollo.", "blue", "📄", ""),
-            ("qr-generator.html", "Generador de Código QR", "Crea códigos QR personalizados para enlaces, textos y Wi-Fi con descarga PNG.", "teal", "📱", ""),
-            ("color-picker.html", "Selector de Color", "Elige colores, convierte HEX/RGB/HSL y genera paletas armoniosas.", "pink", "🎨", ""),
-            ("image-compressor.html", "Compresor de Imágenes", "Comprime imágenes hasta un 80% más pequeñas sin perder calidad.", "red", "🖼️", ""),
+            ("tools/word-counter.html", "Contador de Palabras", "Conteo en tiempo real de palabras, caracteres y párrafos. Análisis de densidad de palabras clave.", "blue", "📝", "🔥 Popular"),
+            ("tools/password-generator.html", "Generador de Contraseñas", "Crea contraseñas seguras y aleatorias con longitud personalizable.", "green", "🔐", ""),
+            ("tools/case-converter.html", "Convertidor de Mayúsculas", "Convierte texto a MAYÚSCULAS, minúsculas, Title Case, camelCase y snake_case.", "purple", "🔤", ""),
+            ("tools/age-calculator.html", "Calculadora de Edad", "Calcula tu edad exacta en años, meses, días, horas y cuenta regresiva de cumpleaños.", "orange", "🎂", ""),
+            ("tools/lorem-generator.html", "Generador Lorem Ipsum", "Genera texto de relleno Lorem Ipsum personalizado para diseño y desarrollo.", "blue", "📄", ""),
+            ("tools/qr-generator.html", "Generador de Código QR", "Crea códigos QR personalizados para enlaces, textos y Wi-Fi con descarga PNG.", "teal", "📱", ""),
+            ("tools/color-picker.html", "Selector de Color", "Elige colores, convierte HEX/RGB/HSL y genera paletas armoniosas.", "pink", "🎨", ""),
+            ("tools/image-compressor.html", "Compresor de Imágenes", "Comprime imágenes hasta un 80% más pequeñas sin perder calidad.", "red", "🖼️", ""),
             ("tools/embed-widget.html", "Generador de Widgets", "Incrusta convertidores o herramientas directamente en tu sitio web gratis.", "purple", "🧩", "✨ Nuevo")
         ],
         "sec_conv": ("📐 Convertidores", "Convertidores de Unidades", "Conversiones instantáneas y precisas de longitud, peso, temperatura y más"),
         "conv_items": [
-            ("length-converter.html", "Convertidor de Longitud", "Km a millas, metros a pies, cm a pulgadas al instante.", "blue", "📏", "🔥 Popular"),
+            ("tools/length-converter.html", "Convertidor de Longitud", "Km a millas, metros a pies, cm a pulgadas al instante.", "blue", "📏", "🔥 Popular"),
             ("tools/weight-converter.html", "Convertidor de Peso", "Kilogramos a libras, gramos a onzas, toneladas al instante.", "green", "⚖️", ""),
             ("tools/temperature-converter.html", "Convertidor de Temperatura", "Celsius a Fahrenheit, Kelvin y Rankine al instante.", "orange", "🌡️", ""),
             ("tools/volume-converter.html", "Convertidor de Volumen", "Litros a galones, mililitros a onzas fluidas.", "purple", "🧪", ""),
@@ -102,12 +102,12 @@ translations = {
         "nav": ["Ferramentas PDF", "Conversores", "Ferramentas IA", "Utilitários"],
         "sec_pdf": ("📄 Ferramentas PDF", "Ferramentas PDF Grátis", "Processamento 100% local sem enviar arquivos para servidores"),
         "pdf_items": [
-            ("pdf-compressor.html", "Compressor de PDF Grátis", "Comprimir arquivos PDF online sem perder qualidade. 100% privado e sem limites.", "red", "📉", "🔥 Popular"),
-            ("pdf-merger.html", "Juntar PDF Grátis", "Combinar vários arquivos PDF em um único documento. Reordenar páginas instantaneamente.", "blue", "📑", "🔥 Popular")
+            ("tools/pdf-compressor.html", "Compressor de PDF Grátis", "Comprimir arquivos PDF online sem perder qualidade. 100% privado e sem limites.", "red", "📉", "🔥 Popular"),
+            ("tools/pdf-merger.html", "Juntar PDF Grátis", "Combinar vários arquivos PDF em um único documento. Reordenar páginas instantaneamente.", "blue", "📑", "🔥 Popular")
         ],
         "sec_util": ("🔧 Utilitários Web", "Utilitários Web Grátis", "Ferramentas essenciais para texto, desenvolvimento, design e imagens"),
         "util_items": [
-            ("word-counter.html", "Contador de Palavras", "Contagem em tempo real de palavras, caracteres e parágrafos.", "blue", "📝", "🔥 Popular"),
+            ("tools/word-counter.html", "Contador de Palavras", "Contagem em tempo real de palavras, caracteres e parágrafos.", "blue", "📝", "🔥 Popular"),
             ("tools/password-generator.html", "Gerador de Senhas", "Crie senhas seguras e aleatórias com comprimento personalizável.", "green", "🔐", ""),
             ("tools/case-converter.html", "Conversor de Maiúsculas", "Converta texto para MAIÚSCULAS, minúsculas e camelCase.", "purple", "🔤", ""),
             ("tools/age-calculator.html", "Calculadora de Idade", "Calcule sua idade exata em anos, meses e dias.", "orange", "🎂", ""),
@@ -119,7 +119,7 @@ translations = {
         ],
         "sec_conv": ("📐 Conversores", "Conversores de Unidades", "Conversões instantâneas de comprimento, peso, temperatura e mais"),
         "conv_items": [
-            ("length-converter.html", "Conversor de Comprimento", "Km para milhas, metros para pés, cm para polegadas.", "blue", "📏", "🔥 Popular"),
+            ("tools/length-converter.html", "Conversor de Comprimento", "Km para milhas, metros para pés, cm para polegadas.", "blue", "📏", "🔥 Popular"),
             ("tools/weight-converter.html", "Conversor de Peso", "Quilogramas para libras, gramas para onças.", "green", "⚖️", ""),
             ("tools/temperature-converter.html", "Conversor de Temperatura", "Celsius para Fahrenheit e Kelvin instantaneamente.", "orange", "🌡️", ""),
             ("tools/volume-converter.html", "Conversor de Volume", "Litros para galões, mililitros para onças fluidas.", "purple", "🧪", ""),
@@ -153,12 +153,12 @@ translations = {
         "nav": ["PDFツール", "単位換算", "AIツール", "ユーティリティ"],
         "sec_pdf": ("📄 PDFツール集", "無料PDFツール集", "ファイル送信ゼロ！お使いのブラウザ内での完全ローカル処理"),
         "pdf_items": [
-            ("pdf-compressor.html", "無料PDF圧縮ツール", "PDFファイルを画質を損なわずに無料圧縮。ファイル送信なし・100%ローカル処理。", "red", "📉", "🔥 人気"),
-            ("pdf-merger.html", "無料PDF結合ツール", "複数のPDFファイルを1つに無料結合。順番並び替え可能・登録不要。", "blue", "📑", "🔥 人気")
+            ("tools/pdf-compressor.html", "無料PDF圧縮ツール", "PDFファイルを画質を損なわずに無料圧縮。ファイル送信なし・100%ローカル処理。", "red", "📉", "🔥 人気"),
+            ("tools/pdf-merger.html", "無料PDF結合ツール", "複数のPDFファイルを1つに無料結合。順番並び替え可能・登録不要。", "blue", "📑", "🔥 人気")
         ],
         "sec_util": ("🔧 便利ツール", "無料Webユーティリティ", "テキスト作成、開発、デザイン、画像処理に役立つ便利ツール"),
         "util_items": [
-            ("word-counter.html", "無料文字数カウント", "リアルタイムで文字数・単語数・行数をカウント。読了時間も一瞬で分析。", "blue", "📝", "🔥 人気"),
+            ("tools/word-counter.html", "無料文字数カウント", "リアルタイムで文字数・単語数・行数をカウント。読了時間も一瞬で分析。", "blue", "📝", "🔥 人気"),
             ("tools/password-generator.html", "パスワード自動生成", "解読不可能な強固なパスワードを即座に自動生成。", "green", "🔐", ""),
             ("tools/case-converter.html", "大文字小文字 変換", "大文字、小文字、キャメルケースなどを一瞬で変換。", "purple", "🔤", ""),
             ("tools/age-calculator.html", "年齢・日数計算", "正確な年齢、生後日数、次の誕生日カウントダウンを計算。", "orange", "🎂", ""),
@@ -170,7 +170,7 @@ translations = {
         ],
         "sec_conv": ("📐 単位換算", "高精度 単位換算ツール", "長さ、重さ、温度、速度、データ容量などの即時換算"),
         "conv_items": [
-            ("length-converter.html", "長さ・距離換算", "km、マイル、メートル、フィート、インチを一瞬で正確に単位換算。", "blue", "📏", "🔥 人気"),
+            ("tools/length-converter.html", "長さ・距離換算", "km、マイル、メートル、フィート、インチを一瞬で正確に単位換算。", "blue", "📏", "🔥 人気"),
             ("tools/weight-converter.html", "重さ・質量換算", "kg、ポンド、グラム、オンス、トンを即座に換算。", "green", "⚖️", ""),
             ("tools/temperature-converter.html", "温度換算", "摂氏(℃)、華氏(℉)、ケルビン(K)を相互換算。", "orange", "🌡️", ""),
             ("tools/volume-converter.html", "体積・容量換算", "リットル、ガロン、ミリリットル、オンスを換算。", "purple", "🧪", ""),
