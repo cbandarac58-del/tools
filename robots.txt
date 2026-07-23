@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://smarttoolzai.com/sitemap.xml
-
-# IndexNow
-IndexNow-Key: a8f3c9d2e1b47605f9e2d8c3a1b47605

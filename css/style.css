@@ -3,8 +3,7 @@
    Premium Dark Theme + Glassmorphism
    ============================================ */
 
-/* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+/* ---------- Google Fonts (loaded via HTML head preconnect) ---------- */
 
 /* ---------- CSS Variables ---------- */
 :root {
@@ -28,11 +27,11 @@
   --gradient-warm: linear-gradient(135deg, #ec4899, #f59e0b);
   --gradient-bg: linear-gradient(180deg, #06060f 0%, #0d0d2b 50%, #06060f 100%);
 
-  /* Text */
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --text-accent: #a78bfa;
+  /* Text - High Contrast WCAG Compliant */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-accent: #c084fc;
 
   /* Borders */
   --border-color: rgba(255, 255, 255, 0.06);

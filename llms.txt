@@ -1,0 +1,26 @@
+# SmartToolzAI
+
+> SmartToolzAI offers 30+ free online utility and AI tools running 100% client-side in your browser with zero data collection or file uploads.
+
+## Core Tools
+
+- [PDF Compressor](https://smarttoolzai.com/tools/pdf-compressor.html): Free private PDF compressor running 100% in browser.
+- [PDF Merger](https://smarttoolzai.com/tools/pdf-merger.html): Combine multiple PDF documents safely in browser.
+- [Word Counter](https://smarttoolzai.com/tools/word-counter.html): Real-time word, character, and sentence counting with reading time.
+- [Password Generator](https://smarttoolzai.com/tools/password-generator.html): Secure random password generator with strength metrics.
+- [QR Code Generator](https://smarttoolzai.com/tools/qr-generator.html): Custom QR code generator with PNG download.
+- [Image Compressor](https://smarttoolzai.com/tools/image-compressor.html): Lossless client-side image compression.
+
+## AI Writing Tools
+
+- [AI Email Generator](https://smarttoolzai.com/tools/ai-email-generator.html): Generate professional emails in seconds.
+- [AI Title Generator](https://smarttoolzai.com/tools/ai-title-generator.html): Generate catchy SEO blog titles.
+- [AI Paragraph Writer](https://smarttoolzai.com/tools/ai-paragraph-rewriter.html): Rewrite, summarize, and expand paragraphs.
+
+## Multi-Language Hubs
+
+- [Spanish Hub](https://smarttoolzai.com/es/): Herramientas gratuitas en español.
+- [Portuguese Hub](https://smarttoolzai.com/pt/): Ferramentas gratuitas em português.
+- [Japanese Hub](https://smarttoolzai.com/ja/): 日本語の無料便利ツール集.
+- [German Hub](https://smarttoolzai.com/de/): Kostenlose Online-Tools auf Deutsch.
+- [French Hub](https://smarttoolzai.com/fr/): Outils gratuits en français.
