@@ -324,9 +324,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // DYNAMIC TOOL COUNT AUTO-UPDATER
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
-  const toolCards = document.querySelectorAll('.tool-card');
-  if (toolCards.length > 0) {
-    const count = toolCards.length;
+  // Query tool cards only from main tool grids (excluding recentlyUsed section & sidebars)
+  const mainToolCards = document.querySelectorAll('.section:not(#recentlyUsed) .tools-grid > .tool-card');
+  if (mainToolCards.length > 0) {
+    const uniqueHrefs = new Set();
+    mainToolCards.forEach(card => {
+      const href = card.getAttribute('href');
+      if (href) {
+        // Get base filename e.g. "word-counter.html"
+        const filename = href.split('/').pop();
+        if (filename && filename.includes('.html')) {
+          uniqueHrefs.add(filename);
+        }
+      }
+    });
+
+    const count = uniqueHrefs.size > 0 ? uniqueHrefs.size : 30;
     
     // Update Hero stats counter (e.g. 30+)
     const counterTools = document.getElementById('counterTools');
