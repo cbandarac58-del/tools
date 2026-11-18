@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Comisiones PayPal y Stripe - Gratis Online (Sin Registro) - SmartToolzAI</title>
+  <meta name="description" content="Calcula comisiones exactas de PayPal y Stripe, pago neto y cuanto cobrar al cliente para recibir el 100%.">
+  <link rel="canonical" href="https://smarttoolzai.com/es/tools/paypal-fee-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/paypal-fee-calculator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/paypal-fee-calculator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/paypal-fee-calculator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/paypal-fee-calculator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/paypal-fee-calculator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/paypal-fee-calculator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/paypal-fee-calculator.html" />
+  <meta property="og:title" content="Calculadora de Comisiones PayPal y Stripe - Gratis Online (Sin Registro) - SmartToolzAI">
+  <meta property="og:description" content="Calcula comisiones exactas de PayPal y Stripe, pago neto y cuanto cobrar al cliente para recibir el 100%.">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PayPal & Stripe Fee Calculator",
+    "url": "https://smarttoolzai.com/es/tools/paypal-fee-calculator.html", "inLanguage": "es",
+    "description": "Calculate exact PayPal and Stripe processing fees, net payout, and reverse invoice amounts to cover transaction fees.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does PayPal charge for Goods and Services in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For standard US domestic commercial transactions, PayPal charges 3.49% + $0.49 per transaction for invoicing/checkout, or 2.99% + $0.49 for standard credit/debit card payments. International transactions add a 1.50% cross-border fee."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate how much to ask for so I receive the exact amount after PayPal fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the formula: Ask Amount = (Target Net Amount + Fixed Fee) / (1 - Percentage Fee). Our calculator automatically computes this 'You Should Ask For' amount in real time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Stripe's standard processing fee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stripe charges 2.9% + $0.30 per successful domestic card charge. International cards add +1.5%, and currency conversion adds an additional +1.0%."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">Herramientas IA</a>
+        <a href="../index.html#tools">Utilidades</a>
+        <a href="../index.html#converters">Convertidores</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">Sobre Nosotros</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Calculadora de Comisiones PayPal y Stripe</h1>
+          <p class="tool-description">Calcula comisiones exactas de PayPal y Stripe, pago neto y cuanto cobrar al cliente para recibir el 100%.</p>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
+            <div>
+              <label for="feeAmount">Invoice / Transaction Amount ($):</label>
+              <input type="number" id="feeAmount" class="form-input" value="100" min="0" step="0.01" placeholder="e.g. 100.00">
+            </div>
+            <div>
+              <label for="feeRatePreset">Payment Processor & Rate:</label>
+              <select id="feeRatePreset" class="form-select">
+                <option value="3.49|0.49">PayPal Goods & Services / Invoicing (3.49% + $0.49)</option>
+                <option value="2.99|0.49">PayPal Standard Card Checkout (2.99% + $0.49)</option>
+                <option value="4.99|0.49">PayPal International Commercial (4.99% + $0.49)</option>
+                <option value="2.90|0.30">Stripe Domestic Card (2.9% + $0.30)</option>
+                <option value="4.40|0.30">Stripe International Card (4.4% + $0.30)</option>
+                <option value="1.99|0.49">PayPal Nonprofit / Charity (1.99% + $0.49)</option>
+                <option value="custom">Custom Fee Rate (% + Fixed)</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="customRateBox" class="form-group" style="display:none;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div>
+              <label for="customPercent">Percentage Fee (%):</label>
+              <input type="number" id="customPercent" class="form-input" value="3.49" step="0.01">
+            </div>
+            <div>
+              <label for="customFixed">Fixed Fee ($):</label>
+              <input type="number" id="customFixed" class="form-input" value="0.49" step="0.01">
+            </div>
+          </div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div class="result-header">
+              <h4>💳 Instant Fee Breakdown</h4>
+              <button id="copyFeeReportBtn" class="btn btn-ghost btn-sm">📋 Copy Breakdown</button>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem;">
+              <div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:12px;padding:1.25rem;text-align:center;">
+                <div style="font-size:0.85rem;color:rgba(255,255,255,0.65);">Total Fee Deducted</div>
+                <div id="outTotalFee" style="font-size:1.75rem;font-weight:800;color:#f87171;margin-top:0.35rem;">$3.98</div>
+                <div id="outEffectiveRate" style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:0.25rem;">Effective: 3.98%</div>
+              </div>
+              <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.25);border-radius:12px;padding:1.25rem;text-align:center;">
+                <div style="font-size:0.85rem;color:rgba(255,255,255,0.65);">You Will Receive (Net)</div>
+                <div id="outYouReceive" style="font-size:1.75rem;font-weight:800;color:#34d399;margin-top:0.35rem;">$96.02</div>
+                <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:0.25rem;">If you bill $100.00</div>
+              </div>
+              <div style="background:rgba(79,70,229,0.12);border:1px solid rgba(129,140,248,0.35);border-radius:12px;padding:1.25rem;text-align:center;">
+                <div style="font-size:0.85rem;color:rgba(255,255,255,0.65);">Ask Client For (Reverse)</div>
+                <div id="outAskFor" style="font-size:1.75rem;font-weight:800;color:#818cf8;margin-top:0.35rem;">$104.12</div>
+                <div id="outToReceiveExact" style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:0.25rem;">To get $100.00 net</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section" style="margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+            <h2 style="font-size:1.3rem;margin-bottom:1rem;">About the PayPal & Stripe Fee Calculator</h2>
+            <p style="color:rgba(255,255,255,0.7);line-height:1.7;">Freelancers, agencies, and e-commerce sellers lose thousands of dollars every year to payment gateway processing fees. Whether you use PayPal Invoicing (3.49% + $0.49) or Stripe Checkout (2.9% + $0.30), simply adding 3.49% to your invoice is mathematically incorrect because the processor also charges a fee on the added fee itself.</p>
+            <p style="color:rgba(255,255,255,0.7);line-height:1.7;margin-top:1rem;">Our reverse fee calculator uses the exact gross-up formula <code>Gross = (Net + Fixed Fee) / (1 - Fee%)</code> so you know down to the cent how much to invoice your client to walk away with 100% of your target payout.</p>
+          </div>
+
+          <div class="faq-section" style="margin-top:2rem;">
+            <h2 style="font-size:1.3rem;margin-bottom:1.25rem;">Preguntas Frecuentes (FAQ)</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border:1px solid rgba(255,255,255,0.08);border-radius:10px;margin-bottom:0.75rem;padding:1rem;">
+                <summary style="cursor:pointer;font-weight:600;color:#818cf8;">How much does PayPal charge for Goods and Services in 2026?</summary>
+                <p style="margin-top:0.75rem;color:rgba(255,255,255,0.7);line-height:1.6;">For standard US domestic commercial transactions, PayPal charges 3.49% + $0.49 per invoice/checkout transaction, or 2.99% + $0.49 for standard credit/debit card payments. International transactions add a 1.50% cross-border surcharge.</p>
+              </details>
+              <details class="faq-item" style="border:1px solid rgba(255,255,255,0.08);border-radius:10px;margin-bottom:0.75rem;padding:1rem;">
+                <summary style="cursor:pointer;font-weight:600;color:#818cf8;">How do I calculate how much to ask for so I receive the exact amount after PayPal fees?</summary>
+                <p style="margin-top:0.75rem;color:rgba(255,255,255,0.7);line-height:1.6;">Use the reverse gross-up formula: Ask Amount = (Target Net Amount + Fixed Fee) / (1 - Percentage Fee). Look at the blue "Ask Client For (Reverse)" card above for the exact figure.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="related-tools" style="margin-top:2rem;padding:1.5rem;background:rgba(79,70,229,0.05);border:1px solid rgba(79,70,229,0.15);border-radius:12px;">
+            <h3 style="font-size:1.1rem;margin-bottom:1rem;">Related Business & Finance Tools</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <a href="invoice-generator.html" style="padding:0.5rem 1rem;background:rgba(79,70,229,0.15);border:1px solid rgba(79,70,229,0.3);border-radius:20px;color:#818cf8;text-decoration:none;font-size:0.9rem;">Free PDF Invoice Generator →</a>
+              <a href="compound-interest-calculator.html" style="padding:0.5rem 1rem;background:rgba(79,70,229,0.15);border:1px solid rgba(79,70,229,0.3);border-radius:20px;color:#818cf8;text-decoration:none;font-size:0.9rem;">Compound Interest Calculator →</a>
+              <a href="youtube-money-calculator.html" style="padding:0.5rem 1rem;background:rgba(79,70,229,0.15);border:1px solid rgba(79,70,229,0.3);border-radius:20px;color:#818cf8;text-decoration:none;font-size:0.9rem;">YouTube Money Calculator →</a>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. 100% Free & Private.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/paypal-fee-calculator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Invoice Generator (Instant PDF Download, No Signup) — SmartToolzAI</title>
+  <meta name="description" content="Create and download professional PDF invoices in seconds for free. 100% client-side privacy, no watermarks, no registration, automatic tax and discount calculation.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/invoice-generator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/invoice-generator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/invoice-generator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/invoice-generator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/invoice-generator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/invoice-generator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/invoice-generator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/invoice-generator.html" />
+  <meta property="og:title" content="Free PDF Invoice Generator (No Signup, No Watermark) — SmartToolzAI">
+  <meta property="og:description" content="Generate clean, printable PDF invoices right in your browser. 100% free and private.">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Free PDF Invoice Generator",
+    "url": "https://smarttoolzai.com/tools/invoice-generator.html",
+    "description": "Create and download professional PDF invoices with automatic tax and discount calculations directly in your browser.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is this PDF Invoice Generator completely free and without watermarks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! SmartToolzAI generates clean, high-resolution vector PDF invoices with zero watermarks, no signup required, and unlimited downloads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my client details and financial numbers stored on your server?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. The PDF document is compiled 100% locally inside your browser using pdf-lib. Your business and client billing details never leave your computer."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../index.html#converters">Converters</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../pages/about.html">About</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Free PDF Invoice Generator</h1>
+          <p class="tool-description">Create, customize, and download clean, watermark-free PDF invoices in seconds. 100% private in-browser generation with automatic subtotal, tax, and discount calculation.</p>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;">
+            <div>
+              <label for="invNumber">Invoice Number:</label>
+              <input type="text" id="invNumber" class="form-input" value="INV-2026-001">
+            </div>
+            <div>
+              <label for="invDate">Issue Date:</label>
+              <input type="date" id="invDate" class="form-input">
+            </div>
+            <div>
+              <label for="invDueDate">Due Date:</label>
+              <input type="date" id="invDueDate" class="form-input">
+            </div>
+            <div>
+              <label for="invCurrency">Currency Symbol:</label>
+              <select id="invCurrency" class="form-select">
+                <option value="$">$ (USD / CAD / AUD)</option>
+                <option value="EUR ">€ (EUR)</option>
+                <option value="GBP ">£ (GBP)</option>
+                <option value="JPY ">¥ (JPY)</option>
+                <option value="LKR ">LKR (Rs)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+            <div>
+              <label for="invFrom">From (Your Business Name, Email & Address):</label>
+              <textarea id="invFrom" class="form-textarea" rows="3" placeholder="Acme Studio LLC&#10;billing@acmestudio.com&#10;New York, NY">Apex Digital Studio
+billing@apexstudio.io
+San Francisco, CA</textarea>
+            </div>
+            <div>
+              <label for="invTo">Bill To (Client Name, Company & Address):</label>
+              <textarea id="invTo" class="form-textarea" rows="3" placeholder="Client Company Inc.&#10;accounts@client.com&#10;London, UK">Global Ventures Inc.
+accounts@globalventures.com
+Austin, TX</textarea>
+            </div>
+          </div>
+
+          <div style="margin:1.5rem 0;">
+            <label style="display:block;font-weight:600;margin-bottom:0.75rem;">Line Items:</label>
+            <div id="invItemsList" style="display:flex;flex-direction:column;gap:0.75rem;"></div>
+            <button type="button" id="addInvItemBtn" class="btn btn-ghost btn-sm" style="margin-top:0.75rem;">➕ Add Line Item</button>
+          </div>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
+            <div>
+              <label for="invTaxRate">Tax Rate (%):</label>
+              <input type="number" id="invTaxRate" class="form-input" value="0" min="0" step="0.1">
+            </div>
+            <div>
+              <label for="invDiscount">Discount Amount:</label>
+              <input type="number" id="invDiscount" class="form-input" value="0" min="0" step="0.01">
+            </div>
+            <div>
+              <label for="invNotes">Payment Terms / Notes:</label>
+              <input type="text" id="invNotes" class="form-input" value="Thank you for your business! Payment due within 14 days.">
+            </div>
+          </div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div class="result-header">
+              <h4>🧾 Live Invoice Summary</h4>
+              <button id="downloadPdfInvoiceBtn" class="btn btn-primary">⬇️ Download PDF Invoice</button>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:1rem;">
+              <div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Subtotal</div>
+                <div id="invSubtotalOut" style="font-size:1.35rem;font-weight:700;">$0.00</div>
+              </div>
+              <div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Tax</div>
+                <div id="invTaxOut" style="font-size:1.35rem;font-weight:700;">$0.00</div>
+              </div>
+              <div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Total Due</div>
+                <div id="invTotalOut" style="font-size:1.65rem;font-weight:800;color:#34d399;">$0.00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section" style="margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+            <h2 style="font-size:1.3rem;margin-bottom:1rem;">About the Free PDF Invoice Maker</h2>
+            <p style="color:rgba(255,255,255,0.7);line-height:1.7;">Our free online Invoice Generator helps freelancers, contractors, consultants, and small businesses create clean, professional PDF invoices in seconds without signing up for expensive accounting software. Everything runs locally in your browser so your client billing data remains 100% confidential.</p>
+          </div>
+
+          <div class="faq-section" style="margin-top:2rem;">
+            <h2 style="font-size:1.3rem;margin-bottom:1.25rem;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border:1px solid rgba(255,255,255,0.08);border-radius:10px;margin-bottom:0.75rem;padding:1rem;">
+                <summary style="cursor:pointer;font-weight:600;color:#818cf8;">Is this PDF Invoice Generator completely free and without watermarks?</summary>
+                <p style="margin-top:0.75rem;color:rgba(255,255,255,0.7);line-height:1.6;">Yes! SmartToolzAI generates clean, high-resolution vector PDF invoices with zero watermarks, no signup required, and unlimited downloads.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. 100% Free & Private.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/tools/invoice-generator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

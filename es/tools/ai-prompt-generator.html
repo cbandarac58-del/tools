@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Prompts IA (CO-STAR) - Gratis Online (Sin Registro) - SmartToolzAI</title>
+  <meta name="description" content="Transforma ideas simples en prompts avanzados y estructurados para ChatGPT, Claude, Cursor y Midjourney.">
+  <link rel="canonical" href="https://smarttoolzai.com/es/tools/ai-prompt-generator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/ai-prompt-generator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/ai-prompt-generator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/ai-prompt-generator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/ai-prompt-generator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/ai-prompt-generator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/ai-prompt-generator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/ai-prompt-generator.html" />
+  <meta property="og:title" content="Generador de Prompts IA (CO-STAR) - Gratis Online (Sin Registro) - SmartToolzAI">
+  <meta property="og:description" content="Transforma ideas simples en prompts avanzados y estructurados para ChatGPT, Claude, Cursor y Midjourney.">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Prompt Generator & Optimizer",
+    "url": "https://smarttoolzai.com/es/tools/ai-prompt-generator.html", "inLanguage": "es",
+    "description": "Transform simple ideas into expert-level structured prompts for ChatGPT, Claude, Gemini, and Midjourney.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes a good AI prompt for ChatGPT or Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best AI prompts include 5 elements: Role/Persona, Context, Specific Task, Constraints/Tone, and Output Format (such as Markdown tables, step-by-step lists, or JSON)."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">Herramientas IA</a>
+        <a href="../index.html#tools">Utilidades</a>
+        <a href="../index.html#converters">Convertidores</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">Sobre Nosotros</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Generador de Prompts IA (CO-STAR)</h1>
+          <p class="tool-description">Transforma ideas simples en prompts avanzados y estructurados para ChatGPT, Claude, Cursor y Midjourney.</p>
+
+          <div class="form-group" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div>
+              <label for="promptTargetModel">Target AI Model:</label>
+              <select id="promptTargetModel" class="form-select">
+                <option value="ChatGPT / Claude / Gemini (Text & Reasoning)">ChatGPT / Claude / Gemini (Text & Reasoning)</option>
+                <option value="Cursor / GitHub Copilot (Coding & Architecture)">Cursor / GitHub Copilot (Coding & Full-Stack)</option>
+                <option value="Midjourney v6 / Flux (Photorealistic Image AI)">Midjourney / Flux (AI Image Generation)</option>
+                <option value="SEO Content & Copywriting Framework">SEO Article & Copywriting Master Prompt</option>
+              </select>
+            </div>
+            <div>
+              <label for="promptFramework">Prompt Engineering Framework:</label>
+              <select id="promptFramework" class="form-select">
+                <option value="CO-STAR (Context, Objective, Style, Tone, Audience, Response)">CO-STAR Framework (Best Overall)</option>
+                <option value="RTF (Role, Task, Format)">Role-Task-Format (Concise & Direct)</option>
+                <option value="Chain-of-Thought (Step-by-Step Deep Reasoning)">Chain-of-Thought (Deep Problem Solving)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="promptGoal">Your Rough Idea or Goal:</label>
+            <textarea id="promptGoal" class="form-textarea" rows="3" placeholder="e.g. Write a high-converting landing page for my SaaS tool that helps freelancers track taxes, or create a photorealistic cyberpunk street scene"></textarea>
+          </div>
+
+          <div class="btn-group">
+            <button id="generatePromptBtn" class="btn btn-primary">🧠 Engineer Master AI Prompt</button>
+          </div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div class="result-header">
+              <h4>✨ Optimized Master Prompt</h4>
+              <button id="copyPromptBtn" class="btn btn-ghost btn-sm">📋 Copy Prompt</button>
+            </div>
+            <div id="promptOutput" class="result-content" style="white-space:pre-wrap;">Enter your rough goal above and click "Engineer Master AI Prompt" to generate a structured prompt...</div>
+          </div>
+
+          <div class="info-section" style="margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+            <h2 style="font-size:1.3rem;margin-bottom:1rem;">Why Structured Prompt Engineering Matters</h2>
+            <p style="color:rgba(255,255,255,0.7);line-height:1.7;">Large Language Models like GPT-4o, Claude 3.7 Sonnet, and Gemini produce generic outputs when given vague one-sentence prompts. By structuring your prompt using the <strong>CO-STAR framework</strong> (Context, Objective, Style, Tone, Audience, Response format), you eliminate hallucinations and unlock expert-level results on the first try.</p>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. 100% Free & Private.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/ai-prompt-generator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

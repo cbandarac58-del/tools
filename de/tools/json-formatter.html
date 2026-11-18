@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter, Validator & Minifier - Kostenlos Online (Ohne Anmeldung) — SmartToolzAI</title>
+  <meta name="description" content="Formatieren, validieren und minimieren Sie JSON-Daten 100% lokal in Ihrem Browser mit Fehlererkennung.">
+  <link rel="canonical" href="https://smarttoolzai.com/de/tools/json-formatter.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/json-formatter.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/json-formatter.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/json-formatter.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/json-formatter.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/json-formatter.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/json-formatter.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/json-formatter.html" />
+  <meta property="og:title" content="JSON Formatter, Validator & Minifier - Kostenlos Online (Ohne Anmeldung) — SmartToolzAI">
+  <meta property="og:description" content="Formatieren, validieren und minimieren Sie JSON-Daten 100% lokal in Ihrem Browser mit Fehlererkennung.">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JSON Formatter & Validator",
+    "url": "https://smarttoolzai.com/de/tools/json-formatter.html", "inLanguage": "de",
+    "description": "Format, validate, beautify, and minify JSON strings locally in your browser.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">KI-Werkzeuge</a>
+        <a href="../index.html#tools">Hilfsprogramme</a>
+        <a href="../index.html#converters">Einheitenrechner</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">Über uns</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>JSON Formatter, Validator & Minifier</h1>
+          <p class="tool-description">Formatieren, validieren und minimieren Sie JSON-Daten 100% lokal in Ihrem Browser mit Fehlererkennung.</p>
+
+          <div class="form-group">
+            <label for="jsonInput">Input Raw or Minified JSON:</label>
+            <textarea id="jsonInput" class="form-textarea" rows="8" style="font-family:monospace;font-size:0.9rem;" placeholder='{"site":"SmartToolzAI","free":true,"tools":36,"languages":["en","es","pt","de","fr","ja"]}'></textarea>
+          </div>
+
+          <div class="btn-group" style="display:flex;flex-wrap:wrap;gap:0.75rem;">
+            <button id="btnFormatJson2" class="btn btn-primary">✨ Prettify (2 Spaces)</button>
+            <button id="btnFormatJson4" class="btn btn-ghost">Prettify (4 Spaces)</button>
+            <button id="btnMinifyJson" class="btn btn-ghost">⚡ Minify JSON</button>
+            <button id="btnSampleJson" class="btn btn-ghost">📄 Load Sample</button>
+          </div>
+
+          <div id="jsonStatusBanner" style="display:none;margin-top:1rem;padding:0.75rem 1rem;border-radius:8px;font-weight:600;font-size:0.9rem;"></div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div class="result-header">
+              <h4>💻 Formatted Output</h4>
+              <button id="copyJsonBtn" class="btn btn-ghost btn-sm">📋 Copy JSON</button>
+            </div>
+            <pre id="jsonOutput" class="result-content" style="font-family:monospace;font-size:0.9rem;overflow-x:auto;white-space:pre-wrap;margin:0;">Formatted JSON will appear here...</pre>
+          </div>
+
+          <div class="info-section" style="margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+            <h2 style="font-size:1.3rem;margin-bottom:1rem;">Why Use a Client-Side JSON Formatter?</h2>
+            <p style="color:rgba(255,255,255,0.7);line-height:1.7;">Many online JSON formatters send your pasted JSON payloads to backend servers where API tokens, customer PII, or internal database structures can be logged. SmartToolzAI parses and formats your JSON 100% locally using your browser's native V8 JavaScript engine.</p>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. 100% Free & Private.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/json-formatter.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

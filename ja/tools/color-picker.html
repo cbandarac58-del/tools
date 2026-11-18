@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>無料カラーピッカー・カラーコード変換ツール — SmartToolzAI</title>
-  <meta name="description" content="カラーピッカーでHEX・RGB・HSLを相互変換。調和のとれたカラーパレットも自動生成。完全無料。">
-  <link rel="canonical" href="https://smarttoolzai.com/tools/color-picker.html">
+  <title>カラーピッカー＆配色パレット生成 - （登録不要・完全無料）— SmartToolzAI</title>
+  <meta name="description" content="色の選択、HEX/RGB/HSLの相互変換、美しいカラーパレットの自動生成。">
+  <link rel="canonical" href="https://smarttoolzai.com/ja/tools/color-picker.html">
   <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/color-picker.html" />
   <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/color-picker.html" />
   <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/color-picker.html" />
   <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/color-picker.html" />
   <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/color-picker.html" />
   <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/color-picker.html" />
-  <meta property="og:title" content="無料カラーピッカー・カラーコード変換ツール — SmartToolzAI">
-  <meta property="og:description" content="カラーピッカーでHEX・RGB・HSLを相互変換。調和のとれたカラーパレットも自動生成。完全無料。">
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/color-picker.html" />
+  <meta property="og:title" content="カラーピッカー＆配色パレット生成 - （登録不要・完全無料）— SmartToolzAI">
+  <meta property="og:description" content="色の選択、HEX/RGB/HSLの相互変換、美しいカラーパレットの自動生成。">
   <link rel="icon" href="../../favicon.png" type="image/png">
   <link rel="stylesheet" href="../../css/style.css">
   <script type="application/ld+json">
@@ -21,7 +22,7 @@
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Color Picker",
-    "url": "https://smarttoolzai.com/tools/color-picker.html",
+    "url": "https://smarttoolzai.com/ja/tools/color-picker.html", "inLanguage": "ja",
     "description": "Pick colors, convert HEX, RGB, HSL values, and generate beautiful color palettes (complementary, triadic, monochromatic). 100% free.",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "All"
@@ -107,13 +108,13 @@
 
       <div class="tool-layout">
         <div class="tool-main">
-          <h1>カラーピッカー</h1>
-          <p class="tool-description">換算する HEX, RGB, and HSL colors and generate matching color schemes and palettes.</p>
+          <h1>カラーピッカー＆配色パレット生成</h1>
+          <p class="tool-description">色の選択、HEX/RGB/HSLの相互変換、美しいカラーパレットの自動生成。</p>
           
           
 <div class="form-group" style="display: flex; gap: 1.5rem; align-items: center;">
   <div>
-    <label for="colorPicker">Select 色:</label>
+    <label for="colorPicker">Select Color:</label>
     <input type="color" id="colorPicker" class="form-input" value="#4f46e5" style="width: 100px; height: 100px; padding: 4px; cursor: pointer; border-radius: var(--radius-md);">
   </div>
   <div style="flex: 1;">
@@ -121,7 +122,7 @@
       <label>HEX</label>
       <div style="display: flex; gap: 0.5rem;">
         <input type="text" id="hexVal" class="form-input" readonly value="#4f46e5">
-        <button id="copyHex" class="btn btn-ghost"> 📋 コピー</button>
+        <button id="copyHex" class="btn btn-ghost">Copy</button>
       </div>
     </div>
   </div>
@@ -132,21 +133,21 @@
     <label>RGB</label>
     <div style="display: flex; gap: 0.5rem;">
       <input type="text" id="rgbVal" class="form-input" readonly value="rgb(79, 70, 229)">
-      <button id="copyRgb" class="btn btn-ghost"> 📋 コピー</button>
+      <button id="copyRgb" class="btn btn-ghost">Copy</button>
     </div>
   </div>
   <div>
     <label>HSL</label>
     <div style="display: flex; gap: 0.5rem;">
       <input type="text" id="hslVal" class="form-input" readonly value="hsl(244, 75%, 59%)">
-      <button id="copyHsl" class="btn btn-ghost"> 📋 コピー</button>
+      <button id="copyHsl" class="btn btn-ghost">Copy</button>
     </div>
   </div>
 </div>
 
 <div class="result-box" style="margin-top: 1.5rem;">
   <div class="result-header">
-    <h4>🎨 生成するd Palette Swatches</h4>
+    <h4>🎨 Generated Palette Swatches</h4>
   </div>
   <div id="paletteContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1rem; margin-top: 1rem;">
     <!-- Palettes -->
@@ -162,7 +163,7 @@
 
 <!-- FAQ Section -->
 <div class="faq-section" style="margin-top: 2rem;">
-  <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+  <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem;">よくある質問 (FAQ)</h2>
   <div class="faq-list">
     <details class="faq-item" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; margin-bottom: 0.75rem; padding: 1rem;">
       <summary style="cursor: pointer; font-weight: 600; color: #818cf8;">What is the difference between HEX, RGB, and HSL colors?</summary>
@@ -226,7 +227,7 @@
         <div class="footer-column">
           <h4>便利ツール</h4>
           <ul>
-            <li><a href="word-counter.html">単語数er</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
             <li><a href="password-generator.html">Password Generator</a></li>
             <li><a href="qr-generator.html">QR Code Generator</a></li>
             <li><a href="image-compressor.html">Image Compressor</a></li>

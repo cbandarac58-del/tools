@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube・TikTok収益計算機 - （登録不要・完全無料）— SmartToolzAI</title>
+  <meta name="description" content="再生回数とジャンル別RPM（金融・SaaS・ガジェット・ゲーム）から日別・月別・年間の収益を試算。">
+  <link rel="canonical" href="https://smarttoolzai.com/ja/tools/youtube-money-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/youtube-money-calculator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/youtube-money-calculator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/youtube-money-calculator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/youtube-money-calculator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/youtube-money-calculator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/youtube-money-calculator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/youtube-money-calculator.html" />
+  <meta property="og:title" content="YouTube・TikTok収益計算機 - （登録不要・完全無料）— SmartToolzAI">
+  <meta property="og:description" content="再生回数とジャンル別RPM（金融・SaaS・ガジェット・ゲーム）から日別・月別・年間の収益を試算。">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "YouTube & TikTok Money Calculator",
+    "url": "https://smarttoolzai.com/ja/tools/youtube-money-calculator.html", "inLanguage": "ja",
+    "description": "Estimate YouTube AdSense and TikTok Creator Rewards earnings by daily views, niche RPM, and sponsor value.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does YouTube pay per 1,000 views (RPM) in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "YouTube RPM (Revenue Per Mille) varies heavily by niche and audience country. Personal Finance and SaaS channels earn $12 to $35 per 1,000 views, Tech and Business channels earn $6 to $15, while Gaming and Entertainment channels typically earn $1.50 to $4.00 per 1,000 views."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does 1 million views on YouTube pay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For long-form videos, 1 million views pays between $2,000 and $25,000+ depending on your niche RPM and Tier-1 audience percentage. For YouTube Shorts, 1 million views typically pays between $80 and $250."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        SmartToolz<span class="gradient-text">AI</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#ai-tools">AIツール</a>
+        <a href="../index.html#tools">便利ツール</a>
+        <a href="../index.html#converters">単位換算</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">サイト概要</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>YouTube・TikTok収益計算機</h1>
+          <p class="tool-description">再生回数とジャンル別RPM（金融・SaaS・ガジェット・ゲーム）から日別・月別・年間の収益を試算。</p>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
+            <div>
+              <label for="ytDailyViews">Daily Views:</label>
+              <input type="number" id="ytDailyViews" class="form-input" value="25000" min="100" step="500">
+            </div>
+            <div>
+              <label for="ytNichePreset">Content Niche / Platform (Avg RPM):</label>
+              <select id="ytNichePreset" class="form-select">
+                <option value="18.50">Personal Finance, Investing & Crypto ($18.50 RPM)</option>
+                <option value="14.00">Software, AI Tools & B2B SaaS ($14.00 RPM)</option>
+                <option value="9.50">Make Money Online & E-Commerce ($9.50 RPM)</option>
+                <option value="6.80" selected>Tech Reviews, Gadgets & Coding ($6.80 RPM)</option>
+                <option value="4.50">Health, Fitness & Self-Improvement ($4.50 RPM)</option>
+                <option value="3.20">Lifestyle, Travel & Vlogs ($3.20 RPM)</option>
+                <option value="2.10">Gaming & Entertainment ($2.10 RPM)</option>
+                <option value="0.85">TikTok Creator Rewards Program ($0.85 RPM)</option>
+                <option value="0.15">YouTube Shorts Feed ($0.15 RPM)</option>
+              </select>
+            </div>
+            <div>
+              <label for="ytCustomRpm">Custom RPM ($ per 1,000 views):</label>
+              <input type="number" id="ytCustomRpm" class="form-input" value="6.80" min="0.01" step="0.10">
+            </div>
+          </div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div class="result-header">
+              <h4>▶️ Estimated Creator Revenue</h4>
+              <button id="copyYtStatsBtn" class="btn btn-ghost btn-sm">📋 Copy Estimate</button>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:1rem;">
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:1.2rem;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Daily Earnings</div>
+                <div id="ytDailyOut" style="font-size:1.6rem;font-weight:800;color:#38bdf8;margin-top:0.35rem;">$170.00</div>
+              </div>
+              <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.25);border-radius:12px;padding:1.2rem;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Monthly Earnings (30d)</div>
+                <div id="ytMonthlyOut" style="font-size:1.6rem;font-weight:800;color:#34d399;margin-top:0.35rem;">$5,100.00</div>
+              </div>
+              <div style="background:rgba(79,70,229,0.12);border:1px solid rgba(129,140,248,0.35);border-radius:12px;padding:1.2rem;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Yearly Earnings (365d)</div>
+                <div id="ytYearlyOut" style="font-size:1.6rem;font-weight:800;color:#818cf8;margin-top:0.35rem;">$62,050.00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section" style="margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+            <h2 style="font-size:1.3rem;margin-bottom:1rem;">Understanding YouTube RPM vs CPM in 2026</h2>
+            <p style="color:rgba(255,255,255,0.7);line-height:1.7;"><strong>CPM (Cost Per Mille)</strong> is what advertisers pay YouTube per 1,000 ad impressions, whereas <strong>RPM (Revenue Per Mille)</strong> is your actual take-home earnings per 1,000 total video views after YouTube's 45% revenue share. Choosing a high-RPM niche like Finance, Software Tutorials, or B2B Reviews allows creators to earn 5x to 10x more with the exact same view count.</p>
+          </div>
+
+          <div class="faq-section" style="margin-top:2rem;">
+            <h2 style="font-size:1.3rem;margin-bottom:1.25rem;">よくある質問 (FAQ)</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border:1px solid rgba(255,255,255,0.08);border-radius:10px;margin-bottom:0.75rem;padding:1rem;">
+                <summary style="cursor:pointer;font-weight:600;color:#818cf8;">How much does YouTube pay per 1,000 views (RPM) in 2026?</summary>
+                <p style="margin-top:0.75rem;color:rgba(255,255,255,0.7);line-height:1.6;">Finance and SaaS channels earn $12–$35 per 1,000 views, Tech channels earn $6–$15, and Gaming/Entertainment channels earn $1.50–$4.00 per 1,000 views.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 SmartToolzAI. All rights reserved. 100% Free & Private.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/youtube-money-calculator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

@@ -1,8 +1,17 @@
 # SmartToolzAI
 
-> SmartToolzAI offers 30+ free online utility and AI tools running 100% client-side in your browser with zero data collection or file uploads.
+> SmartToolzAI offers 36+ free online AI, business, finance, PDF, and developer tools running 100% client-side in your browser with zero signup, zero watermarks, and total privacy. Available in 6 languages (English, Spanish, Portuguese, Japanese, German, French).
 
-## Core Tools
+## Pro Business, Finance & Creator Tools
+
+- [Free PDF Invoice Generator](https://smarttoolzai.com/tools/invoice-generator.html): Create and download watermark-free PDF invoices in seconds with automatic tax & discount calculation.
+- [PayPal & Stripe Fee Calculator](https://smarttoolzai.com/tools/paypal-fee-calculator.html): Calculate exact 2026 PayPal & Stripe fees, net payout, and reverse "Ask Client For" invoice amounts.
+- [YouTube & TikTok Money Calculator](https://smarttoolzai.com/tools/youtube-money-calculator.html): Estimate daily, monthly, and annual creator ad revenue by niche RPM.
+- [AI Prompt Generator & Optimizer (CO-STAR)](https://smarttoolzai.com/tools/ai-prompt-generator.html): Transform rough ideas into structured expert prompts for ChatGPT, Claude, Cursor, and Midjourney.
+- [Compound Interest & ROI Calculator](https://smarttoolzai.com/tools/compound-interest-calculator.html): Calculate future investment growth with monthly contributions and year-by-year breakdown tables.
+- [JSON Formatter, Validator & Minifier](https://smarttoolzai.com/tools/json-formatter.html): Format, validate, and minify JSON payloads 100% locally in your browser.
+
+## Core PDF & Utility Tools
 
 - [PDF Compressor](https://smarttoolzai.com/tools/pdf-compressor.html): Free private PDF compressor running 100% in browser.
 - [PDF Merger](https://smarttoolzai.com/tools/pdf-merger.html): Combine multiple PDF documents safely in browser.
@@ -10,17 +19,34 @@
 - [Password Generator](https://smarttoolzai.com/tools/password-generator.html): Secure random password generator with strength metrics.
 - [QR Code Generator](https://smarttoolzai.com/tools/qr-generator.html): Custom QR code generator with PNG download.
 - [Image Compressor](https://smarttoolzai.com/tools/image-compressor.html): Lossless client-side image compression.
+- [Color Picker & Palette Generator](https://smarttoolzai.com/tools/color-picker.html): HEX/RGB/HSL color converter and palette generator.
+- [Case Converter](https://smarttoolzai.com/tools/case-converter.html): Instant UPPER, lower, Title, and camelCase converter.
+- [Age Calculator](https://smarttoolzai.com/tools/age-calculator.html): Exact age in years, months, days, and next birthday countdown.
 
-## AI Writing Tools
+## AI Writing & Marketing Tools
 
 - [AI Email Generator](https://smarttoolzai.com/tools/ai-email-generator.html): Generate professional emails in seconds.
-- [AI Title Generator](https://smarttoolzai.com/tools/ai-title-generator.html): Generate catchy SEO blog titles.
-- [AI Paragraph Writer](https://smarttoolzai.com/tools/ai-paragraph-rewriter.html): Rewrite, summarize, and expand paragraphs.
+- [AI Title Generator](https://smarttoolzai.com/tools/ai-title-generator.html): Generate 10 high-CTR SEO blog and YouTube titles.
+- [AI Paragraph Writer](https://smarttoolzai.com/tools/ai-paragraph-rewriter.html): Rewrite, summarize, simplify, and expand paragraphs.
+- [AI Social Bio Generator](https://smarttoolzai.com/tools/ai-bio-generator.html): Generate Instagram, LinkedIn, TikTok, and X bios.
+- [AI Business Name Generator](https://smarttoolzai.com/tools/ai-business-name-generator.html): Generate creative brandable startup names.
+- [AI Brand Slogan Generator](https://smarttoolzai.com/tools/ai-slogan-generator.html): Generate memorable brand taglines and slogans.
+- [AI Meta Description Generator](https://smarttoolzai.com/tools/ai-meta-description-generator.html): Generate high-CTR SEO meta descriptions under 160 characters.
+- [AI Hashtag Generator](https://smarttoolzai.com/tools/ai-hashtag-generator.html): Generate trending hashtags for social media reach.
+- [AI Social Post Generator](https://smarttoolzai.com/tools/ai-post-generator.html): Create engaging social media posts in seconds.
+
+## Featured Guides & Formulas
+
+- [PayPal vs Stripe Fees (2026 Breakdown)](https://smarttoolzai.com/blog/paypal-vs-stripe-fees.html)
+- [How to Compress a PDF Under 100KB or 200KB](https://smarttoolzai.com/blog/how-to-compress-pdf-under-100kb.html)
+- [YouTube RPM & CPM Rates by Niche in 2026](https://smarttoolzai.com/blog/youtube-rpm-rates-by-niche.html)
+- [ChatGPT & Claude Prompt Engineering Cheat Sheet (CO-STAR)](https://smarttoolzai.com/blog/chatgpt-prompt-engineering-cheat-sheet.html)
+- [How to Write a Freelance Invoice That Gets Paid Fast](https://smarttoolzai.com/blog/free-invoice-template-freelancers.html)
 
 ## Multi-Language Hubs
 
-- [Spanish Hub](https://smarttoolzai.com/es/): Herramientas gratuitas en español.
-- [Portuguese Hub](https://smarttoolzai.com/pt/): Ferramentas gratuitas em português.
-- [Japanese Hub](https://smarttoolzai.com/ja/): 日本語の無料便利ツール集.
-- [German Hub](https://smarttoolzai.com/de/): Kostenlose Online-Tools auf Deutsch.
-- [French Hub](https://smarttoolzai.com/fr/): Outils gratuits en français.
+- [Spanish Hub](https://smarttoolzai.com/es/index.html): Herramientas gratuitas de IA, finanzas y PDF en español.
+- [Portuguese Hub](https://smarttoolzai.com/pt/index.html): Ferramentas gratuitas de IA, finanças e PDF em português.
+- [Japanese Hub](https://smarttoolzai.com/ja/index.html): 日本語の完全無料AI・ビジネス計算・PDF便利ツール集.
+- [German Hub](https://smarttoolzai.com/de/index.html): Kostenlose KI-, Finanz- und PDF-Werkzeuge auf Deutsch.
+- [French Hub](https://smarttoolzai.com/fr/index.html): Outils IA, finance et PDF gratuits en français.
