@@ -365,6 +365,16 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==========================================
 function createToolSidebar(currentTool) {
   const allTools = [
+    { name: 'Compress Image to 20KB/50KB', url: 'compress-image-to-50kb.html', icon: '🗜️' },
+    { name: 'Etsy, eBay & TikTok Fee Calculator', url: 'ecommerce-fee-calculator.html', icon: '🛍️' },
+    { name: 'LLM Token & API Cost Calculator', url: 'llm-token-calculator.html', icon: '🤖' },
+    { name: 'YouTube Thumbnail Downloader', url: 'youtube-thumbnail-downloader.html', icon: '🖼️' },
+    { name: 'WEBP to PNG & JPG Converter', url: 'webp-to-png-jpg-converter.html', icon: '🔄' },
+    { name: 'Digital Signature Maker (PNG)', url: 'digital-signature-maker.html', icon: '✒️' },
+    { name: 'Free PDF Receipt Maker', url: 'receipt-generator.html', icon: '🧾' },
+    { name: 'LinkedIn & IG Text Formatter', url: 'social-media-text-formatter.html', icon: '✨' },
+    { name: 'Base64 Encoder & Image URI', url: 'base64-encoder-decoder.html', icon: '🔐' },
+    { name: 'JWT Token Decoder & Debugger', url: 'jwt-decoder.html', icon: '🔑' },
     { name: 'Free Invoice Generator (PDF)', url: 'invoice-generator.html', icon: '🧾' },
     { name: 'PayPal & Stripe Fee Calculator', url: 'paypal-fee-calculator.html', icon: '💳' },
     { name: 'YouTube & TikTok Money Calculator', url: 'youtube-money-calculator.html', icon: '▶️' },

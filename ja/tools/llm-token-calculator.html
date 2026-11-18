@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLMトークン数カウント＆AI API料金計算機 - （登録不要・完全無料）— SmartToolzAI</title>
+  <meta name="description" content="GPT-4o、Claude 3.7 Sonnet、Gemini 2.5、DeepSeek R1のトークン数とAPI利用料金を一括比較。">
+  <link rel="canonical" href="https://smarttoolzai.com/ja/tools/llm-token-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/llm-token-calculator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/llm-token-calculator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/llm-token-calculator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/llm-token-calculator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/llm-token-calculator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/llm-token-calculator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/llm-token-calculator.html" />
+  <meta property="og:title" content="LLMトークン数カウント＆AI API料金計算機 - （登録不要・完全無料）— SmartToolzAI">
+  <meta property="og:description" content="GPT-4o、Claude 3.7 Sonnet、Gemini 2.5、DeepSeek R1のトークン数とAPI利用料金を一括比較。">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "LLM Token Counter & API Cost Calculator",
+    "url": "https://smarttoolzai.com/ja/tools/llm-token-calculator.html", "inLanguage": "ja",
+    "description": "Estimate LLM tokens and compare API costs across OpenAI GPT-4o, Claude 3.7 Sonnet, Gemini 2.5, and DeepSeek R1.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">AIツール</a>
+        <a href="../index.html#tools">便利ツール</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">サイト概要</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>LLMトークン数カウント＆AI API料金計算機</h1>
+          <p class="tool-description">GPT-4o、Claude 3.7 Sonnet、Gemini 2.5、DeepSeek R1のトークン数とAPI利用料金を一括比較。</p>
+
+          <div class="form-group">
+            <label for="llmPromptText">Paste Your System + User Prompt (to count input tokens):</label>
+            <textarea id="llmPromptText" class="form-textarea" rows="5" placeholder="Paste your prompt or context text here to count exact tokens and estimate API bill...">You are an expert full-stack AI architect. Analyze the user's SaaS requirements and output a complete database schema, REST API specification, and cost optimization plan.</textarea>
+          </div>
+
+          <div class="form-group" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div>
+              <label for="llmOutTokens">Expected Output Tokens per Call:</label>
+              <input type="number" id="llmOutTokens" class="form-input" value="600" min="1" step="100">
+            </div>
+            <div>
+              <label for="llmNumCalls">Number of API Requests (Monthly/Batch):</label>
+              <input type="number" id="llmNumCalls" class="form-input" value="10000" min="1" step="500">
+            </div>
+          </div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem;">
+              <div style="background:rgba(79,70,229,0.12);border:1px solid rgba(129,140,248,0.35);padding:1rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Estimated Input Tokens</div>
+                <div id="llmTokenCountOut" style="font-size:1.5rem;font-weight:800;color:#818cf8;">35</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);padding:1rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Word Count</div>
+                <div id="llmWordCountOut" style="font-size:1.5rem;font-weight:700;">26</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);padding:1rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Characters</div>
+                <div id="llmCharCountOut" style="font-size:1.5rem;font-weight:700;">175</div>
+              </div>
+            </div>
+
+            <div style="overflow-x:auto;">
+              <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+                <thead>
+                  <tr style="background:rgba(79,70,229,0.2);text-align:left;">
+                    <th style="padding:0.65rem;">AI Model</th>
+                    <th style="padding:0.65rem;">Price / 1M Tokens (In / Out)</th>
+                    <th style="padding:0.65rem;">Cost Per 1 Call</th>
+                    <th style="padding:0.65rem;">Total Batch Cost</th>
+                  </tr>
+                </thead>
+                <tbody id="llmPriceTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 SmartToolzAI. All rights reserved.</p></div></div></footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/llm-token-calculator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

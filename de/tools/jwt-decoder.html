@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JWT Decoder & JSON Web Token Inspector (100% Client-Side) - Kostenlos Online (Ohne Anmeldung) — SmartToolzAI</title>
+  <meta name="description" content="Dekodieren und prüfen Sie JWT-Header, Payload-Claims und Ablaufzeiten lokal im Browser ohne Server-Übertragung.">
+  <link rel="canonical" href="https://smarttoolzai.com/de/tools/jwt-decoder.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/jwt-decoder.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/jwt-decoder.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/jwt-decoder.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/jwt-decoder.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/jwt-decoder.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/jwt-decoder.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/jwt-decoder.html" />
+  <meta property="og:title" content="JWT Decoder & JSON Web Token Inspector (100% Client-Side) - Kostenlos Online (Ohne Anmeldung) — SmartToolzAI">
+  <meta property="og:description" content="Dekodieren und prüfen Sie JWT-Header, Payload-Claims und Ablaufzeiten lokal im Browser ohne Server-Übertragung.">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JWT Decoder & Inspector",
+    "url": "https://smarttoolzai.com/de/tools/jwt-decoder.html", "inLanguage": "de",
+    "description": "Decode JSON Web Tokens (JWT) and verify expiration timestamps locally in your browser.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">KI-Werkzeuge</a>
+        <a href="../index.html#tools">Hilfsprogramme</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">Über uns</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>JWT Decoder & JSON Web Token Inspector (100% Client-Side)</h1>
+          <p class="tool-description">Dekodieren und prüfen Sie JWT-Header, Payload-Claims und Ablaufzeiten lokal im Browser ohne Server-Übertragung.</p>
+
+          <div class="form-group">
+            <label for="jwtInput">Encoded JWT String (Header.Payload.Signature):</label>
+            <textarea id="jwtInput" class="form-textarea" rows="4" style="font-family:monospace;font-size:0.88rem;word-break:break-all;">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyXzI2ZjUzZmE3IiwibmFtZSI6IlNtYXJ0VG9vbHpBSSBEZXZlbG9wZXIiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3OTQ5NzY4MDAsImV4cCI6MTg5NDk3NjgwMH0.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</textarea>
+          </div>
+
+          <div id="jwtStatusBanner" style="padding:0.8rem 1rem;border-radius:8px;font-weight:600;margin-bottom:1.5rem;"></div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+            <div class="result-box" style="margin:0;">
+              <div class="result-header">
+                <h4>📕 Decoded Header (Algorithm & Type)</h4>
+              </div>
+              <pre id="jwtHeaderOut" class="result-content" style="font-family:monospace;font-size:0.88rem;margin:0;"></pre>
+            </div>
+            <div class="result-box" style="margin:0;">
+              <div class="result-header">
+                <h4>📗 Decoded Payload (Claims & Data)</h4>
+              </div>
+              <pre id="jwtPayloadOut" class="result-content" style="font-family:monospace;font-size:0.88rem;margin:0;"></pre>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 SmartToolzAI. All rights reserved.</p></div></div></footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/jwt-decoder.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

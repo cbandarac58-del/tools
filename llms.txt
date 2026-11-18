@@ -4,6 +4,16 @@
 
 ## Pro Business, Finance & Creator Tools
 
+- [Compress Image to 20KB, 50KB or 100KB Exact Size](https://smarttoolzai.com/tools/compress-image-to-50kb.html): Shrink JPG, PNG, and WEBP photos to an exact KB target size for passport, visa, and exam portals.
+- [Etsy, eBay, TikTok Shop & Shopify Fee Calculator](https://smarttoolzai.com/tools/ecommerce-fee-calculator.html): Calculate 2026 marketplace seller fees, net profit, and margins.
+- [LLM Token Counter & AI API Cost Calculator](https://smarttoolzai.com/tools/llm-token-calculator.html): Count prompt tokens and compare API costs across GPT-4o, Claude 3.7, Gemini 2.5, and DeepSeek R1.
+- [YouTube Thumbnail Downloader (4K & Full HD)](https://smarttoolzai.com/tools/youtube-thumbnail-downloader.html): Download original Max-Resolution 1080p/4K thumbnails from any YouTube video or Short.
+- [WEBP to PNG & JPG Image Converter](https://smarttoolzai.com/tools/webp-to-png-jpg-converter.html): Convert between WEBP, PNG, and JPG image formats locally in your browser.
+- [Digital Signature Maker (Transparent PNG)](https://smarttoolzai.com/tools/digital-signature-maker.html): Draw or type your electronic signature and download a transparent PNG.
+- [Free PDF Receipt Maker](https://smarttoolzai.com/tools/receipt-generator.html): Generate and download official PDF payment receipts with a PAID IN FULL stamp.
+- [LinkedIn & Instagram Bold/Italic Text Formatter](https://smarttoolzai.com/tools/social-media-text-formatter.html): Convert plain text into Unicode Bold, Italic, and Monospace fonts.
+- [Base64 Encoder, Decoder & Image-to-Base64](https://smarttoolzai.com/tools/base64-encoder-decoder.html): Encode/decode UTF-8 Base64 strings and convert images to Base64 Data URIs.
+- [JWT Token Decoder & Inspector](https://smarttoolzai.com/tools/jwt-decoder.html): Decode JSON Web Tokens (JWT) and verify expiration timestamps locally.
 - [Free PDF Invoice Generator](https://smarttoolzai.com/tools/invoice-generator.html): Create and download watermark-free PDF invoices in seconds with automatic tax & discount calculation.
 - [PayPal & Stripe Fee Calculator](https://smarttoolzai.com/tools/paypal-fee-calculator.html): Calculate exact 2026 PayPal & Stripe fees, net payout, and reverse "Ask Client For" invoice amounts.
 - [YouTube & TikTok Money Calculator](https://smarttoolzai.com/tools/youtube-money-calculator.html): Estimate daily, monthly, and annual creator ad revenue by niche RPM.

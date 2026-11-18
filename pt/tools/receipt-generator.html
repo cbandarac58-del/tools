@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Recibos de Pagamento em PDF Grátis - Grátis Online (Sem Registro) — SmartToolzAI</title>
+  <meta name="description" content="Crie e baixe recibos de pagamento oficiais em PDF sem marca d'agua e sem cadastro em segundos.">
+  <link rel="canonical" href="https://smarttoolzai.com/pt/tools/receipt-generator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/receipt-generator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/receipt-generator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/receipt-generator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/receipt-generator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/receipt-generator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/receipt-generator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/receipt-generator.html" />
+  <meta property="og:title" content="Gerador de Recibos de Pagamento em PDF Grátis - Grátis Online (Sem Registro) — SmartToolzAI">
+  <meta property="og:description" content="Crie e baixe recibos de pagamento oficiais em PDF sem marca d'agua e sem cadastro em segundos.">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Free PDF Receipt Maker",
+    "url": "https://smarttoolzai.com/pt/tools/receipt-generator.html", "inLanguage": "pt",
+    "description": "Create and download official PDF payment receipts with a PAID IN FULL stamp directly in your browser.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">Ferramentas IA</a>
+        <a href="../index.html#tools">Utilitários</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">Sobre Nós</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Gerador de Recibos de Pagamento em PDF Grátis</h1>
+          <p class="tool-description">Crie e baixe recibos de pagamento oficiais em PDF sem marca d'agua e sem cadastro em segundos.</p>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
+            <div>
+              <label for="recNumber">Receipt Number:</label>
+              <input type="text" id="recNumber" class="form-input" value="REC-2026-104">
+            </div>
+            <div>
+              <label for="recDate">Payment Date:</label>
+              <input type="date" id="recDate" class="form-input">
+            </div>
+            <div>
+              <label for="recMethod">Payment Method:</label>
+              <select id="recMethod" class="form-select">
+                <option value="Credit / Debit Card">Credit / Debit Card</option>
+                <option value="Bank Wire / ACH Transfer">Bank Wire / ACH Transfer</option>
+                <option value="PayPal / Stripe">PayPal / Stripe</option>
+                <option value="Cash Payment">Cash Payment</option>
+              </select>
+            </div>
+            <div>
+              <label for="recCurrency">Currency:</label>
+              <select id="recCurrency" class="form-select">
+                <option value="$">$ (USD)</option>
+                <option value="EUR ">€ (EUR)</option>
+                <option value="GBP ">£ (GBP)</option>
+                <option value="LKR ">LKR (Rs)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
+            <div>
+              <label for="recMerchant">Merchant / Business Name:</label>
+              <input type="text" id="recMerchant" class="form-input" value="Apex Digital Studio LLC">
+            </div>
+            <div>
+              <label for="recCustomer">Paid By (Customer / Client Name):</label>
+              <input type="text" id="recCustomer" class="form-input" value="Global Ventures Inc.">
+            </div>
+          </div>
+
+          <div class="form-group" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;">
+            <div>
+              <label for="recDesc">Item / Service Description:</label>
+              <input type="text" id="recDesc" class="form-input" value="Monthly Software Retainer & Cloud Hosting">
+            </div>
+            <div>
+              <label for="recAmount">Amount Paid:</label>
+              <input type="number" id="recAmount" class="form-input" value="450.00" min="0" step="0.01">
+            </div>
+            <div>
+              <label for="recTax">Tax Amount:</label>
+              <input type="number" id="recTax" class="form-input" value="0.00" min="0" step="0.01">
+            </div>
+          </div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div class="result-header">
+              <div>
+                <span style="font-size:0.85rem;color:rgba(255,255,255,0.6);">Total Paid Receipt Amount:</span>
+                <div id="recTotalOut" style="font-size:1.75rem;font-weight:800;color:#34d399;">$450.00</div>
+              </div>
+              <button id="btnDownloadReceiptPdf" class="btn btn-primary">⬇️ Download PDF Receipt</button>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 SmartToolzAI. All rights reserved.</p></div></div></footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/receipt-generator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

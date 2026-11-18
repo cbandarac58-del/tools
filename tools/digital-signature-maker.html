@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Digital Signature Maker (Draw or Type Transparent PNG) — SmartToolzAI</title>
+  <meta name="description" content="Draw or type your electronic signature online and download a transparent background PNG image for PDF documents, contracts, and Word files. 100% private.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/digital-signature-maker.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/digital-signature-maker.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/digital-signature-maker.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/digital-signature-maker.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/digital-signature-maker.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/digital-signature-maker.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/digital-signature-maker.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/digital-signature-maker.html" />
+  <meta property="og:title" content="Free Digital Signature Maker (Transparent PNG) — SmartToolzAI">
+  <meta property="og:description" content="Create a handwritten or cursive electronic signature with a transparent background in seconds.">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Digital Signature Maker (Transparent PNG)",
+    "url": "https://smarttoolzai.com/tools/digital-signature-maker.html",
+    "description": "Draw or type a digital signature and download a high-resolution transparent PNG.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../pages/about.html">About</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Free Digital Signature Maker (Transparent PNG)</h1>
+          <p class="tool-description">Draw your handwritten signature with your mouse, trackpad, or touchscreen—or type your name in cursive—and download a transparent-background PNG ready for PDFs, contracts, and Google Docs.</p>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
+            <div>
+              <label for="sigColor">Ink Color:</label>
+              <select id="sigColor" class="form-select">
+                <option value="#000000">Classic Black Ink (#000000)</option>
+                <option value="#1e3a8a">Legal Royal Blue Ink (#1E3A8A)</option>
+                <option value="#0f172a">Charcoal Navy Ink (#0F172A)</option>
+              </select>
+            </div>
+            <div>
+              <label for="sigStrokeWidth">Pen Thickness:</label>
+              <select id="sigStrokeWidth" class="form-select">
+                <option value="2">Fine Fountain Pen (2px)</option>
+                <option value="3.5" selected>Standard Gel Pen (3.5px)</option>
+                <option value="5">Bold Marker Pen (5px)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="background:#ffffff;border:2px solid #818cf8;border-radius:12px;padding:0.5rem;margin-bottom:1rem;text-align:center;">
+            <canvas id="sigCanvas" width="680" height="220" style="width:100%;max-width:680px;height:220px;cursor:crosshair;touch-action:none;display:block;margin:0 auto;"></canvas>
+          </div>
+
+          <div class="form-group" style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <input type="text" id="sigTypedText" class="form-input" style="flex:1;min-width:200px;" placeholder="Or type your full name to generate a cursive signature...">
+            <button type="button" id="btnRenderTypedSig" class="btn btn-ghost">✍️ Generate Cursive</button>
+          </div>
+
+          <div class="btn-group" style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <button type="button" id="btnDownloadSig" class="btn btn-primary">⬇️ Download Transparent PNG</button>
+            <button type="button" id="btnClearSig" class="btn btn-ghost">🗑️ Clear Pad</button>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 SmartToolzAI. All rights reserved.</p></div></div></footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/tools/digital-signature-maker.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>
