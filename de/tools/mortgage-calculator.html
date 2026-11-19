@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baufinanzierung & Kredit-Tilgungsrechner - Kostenlos Online (Ohne Anmeldung) — SmartToolzAI</title>
+  <meta name="description" content="Berechnen Sie monatliche Kreditraten, Gesamtzinsen und den jährlichen Tilgungsplan.">
+  <link rel="canonical" href="https://smarttoolzai.com/de/tools/mortgage-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/mortgage-calculator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/mortgage-calculator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/mortgage-calculator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/mortgage-calculator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/mortgage-calculator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/mortgage-calculator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/mortgage-calculator.html" />
+  <meta property="og:title" content="Baufinanzierung & Kredit-Tilgungsrechner - Kostenlos Online (Ohne Anmeldung) — SmartToolzAI">
+  <meta property="og:description" content="Berechnen Sie monatliche Kreditraten, Gesamtzinsen und den jährlichen Tilgungsplan.">
+  <!-- Google Search SERP & Multi-Device Favicon Suite -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48 32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:image" content="https://smarttoolzai.com/og-image.jpg">
+  <meta name="twitter:image" content="https://smarttoolzai.com/og-image.jpg">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Mortgage & Home Loan EMI Calculator",
+    "url": "https://smarttoolzai.com/de/tools/mortgage-calculator.html", "inLanguage": "de",
+    "description": "Calculate monthly mortgage payments, total interest cost, and a complete year-by-year amortization schedule including property taxes and home insurance.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much can a 15-year mortgage save compared to a 30-year mortgage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Switching from a 30-year to a 15-year loan typically cuts total lifetime interest paid by more than 55% while building home equity twice as fast."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">&#9889;</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">KI-Werkzeuge</a>
+        <a href="../index.html#tools">Hilfsprogramme</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">Über uns</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Baufinanzierung & Kredit-Tilgungsrechner</h1>
+          <p class="tool-description">Berechnen Sie monatliche Kreditraten, Gesamtzinsen und den jährlichen Tilgungsplan.</p>
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;">
+  <div><label for="mgHomePrice">Home Price ($):</label><input type="number" id="mgHomePrice" class="form-input" value="400000" step="5000"></div>
+  <div><label for="mgDownPayment">Down Payment ($):</label><input type="number" id="mgDownPayment" class="form-input" value="80000" step="5000"></div>
+  <div><label for="mgRate">Interest Rate (%):</label><input type="number" id="mgRate" class="form-input" value="6.25" step="0.05"></div>
+  <div><label for="mgYears">Loan Term (Years):</label><input type="number" id="mgYears" class="form-input" value="30" min="1" max="50"></div>
+  <div><label for="mgMonthlyTax">Monthly Tax &amp; Insurance ($):</label><input type="number" id="mgMonthlyTax" class="form-input" value="450" step="25"></div>
+</div>
+<div class="result-box" style="margin-top:1.5rem;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;">
+    <div style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);padding:1rem;border-radius:10px;text-align:center;"><div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Est. Monthly Payment</div><div id="mgOutMonthly" style="font-size:1.55rem;font-weight:800;color:#34d399;">$0.00</div></div>
+    <div style="background:rgba(255,255,255,0.04);padding:1rem;border-radius:10px;text-align:center;"><div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Loan Principal</div><div id="mgOutLoanAmt" style="font-size:1.4rem;font-weight:700;">$0.00</div></div>
+    <div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);padding:1rem;border-radius:10px;text-align:center;"><div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Total Interest Paid</div><div id="mgOutTotalInt" style="font-size:1.4rem;font-weight:700;color:#f87171;">$0.00</div></div>
+    <div style="background:rgba(79,70,229,0.12);border:1px solid rgba(129,140,248,0.35);padding:1rem;border-radius:10px;text-align:center;"><div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Total Loan Cost</div><div id="mgOutTotalPay" style="font-size:1.4rem;font-weight:700;color:#818cf8;">$0.00</div></div>
+  </div>
+  <div style="margin-top:1.5rem;max-height:340px;overflow-y:auto;">
+    <table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+      <thead><tr style="background:rgba(79,70,229,0.2);text-align:left;"><th style="padding:0.6rem;">Year</th><th style="padding:0.6rem;">Principal Paid</th><th style="padding:0.6rem;">Interest Paid</th><th style="padding:0.6rem;">Remaining Balance</th></tr></thead>
+      <tbody id="mgAmortBody"></tbody>
+    </table>
+  </div>
+</div>
+          <div class="faq-section" style="margin-top:2rem;">
+            <h2 style="font-size:1.3rem;margin-bottom:1.25rem;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border:1px solid rgba(255,255,255,0.08);border-radius:10px;margin-bottom:0.75rem;padding:1rem;">
+                <summary style="cursor:pointer;font-weight:600;color:#818cf8;">How much can a 15-year mortgage save compared to a 30-year mortgage?</summary>
+                <p style="margin-top:0.75rem;color:rgba(255,255,255,0.7);line-height:1.6;">Switching from a 30-year to a 15-year loan typically cuts total lifetime interest paid by more than 55% while building home equity twice as fast.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>&#169; 2026 SmartToolzAI. All rights reserved. 100% Free &amp; Client-Side Private.</p></div></div></footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/mortgage-calculator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

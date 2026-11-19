@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>無料JPG・PNGからPDF変換ツール - （登録不要・完全無料）— SmartToolzAI</title>
+  <meta name="description" content="複数のJPG/PNG/WEBP画像をブラウザ内で1つのPDFファイルに結合・変換。送信なし。">
+  <link rel="canonical" href="https://smarttoolzai.com/ja/tools/jpg-to-pdf.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/jpg-to-pdf.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/jpg-to-pdf.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/jpg-to-pdf.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/jpg-to-pdf.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/jpg-to-pdf.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/jpg-to-pdf.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/jpg-to-pdf.html" />
+  <meta property="og:title" content="無料JPG・PNGからPDF変換ツール - （登録不要・完全無料）— SmartToolzAI">
+  <meta property="og:description" content="複数のJPG/PNG/WEBP画像をブラウザ内で1つのPDFファイルに結合・変換。送信なし。">
+  <!-- Google Search SERP & Multi-Device Favicon Suite -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48 32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:image" content="https://smarttoolzai.com/og-image.jpg">
+  <meta name="twitter:image" content="https://smarttoolzai.com/og-image.jpg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JPG & PNG to PDF Converter",
+    "url": "https://smarttoolzai.com/ja/tools/jpg-to-pdf.html", "inLanguage": "ja",
+    "description": "Convert multiple JPG, PNG, and WEBP images into a single clean A4 PDF document 100% locally in your browser with zero uploads and no watermarks.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is it safe to convert ID photos and documents from JPG to PDF here?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! SmartToolzAI compiles your images into a PDF entirely inside your browser using pdf-lib. Your photos are never uploaded to any remote server."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">&#9889;</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">AIツール</a>
+        <a href="../index.html#tools">便利ツール</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">サイト概要</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>無料JPG・PNGからPDF変換ツール</h1>
+          <p class="tool-description">複数のJPG/PNG/WEBP画像をブラウザ内で1つのPDFファイルに結合・変換。送信なし。</p>
+          <div id="j2pDropzone" style="border:2px dashed rgba(79,70,229,0.45);border-radius:16px;padding:2.5rem 1.5rem;text-align:center;background:rgba(79,70,229,0.04);cursor:pointer;margin-bottom:1.25rem;">
+  <div style="font-size:2.8rem;margin-bottom:0.5rem;">&#128444;&#65039;</div>
+  <h3>Drag &amp; Drop Multiple JPG, PNG or WEBP Images</h3>
+  <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;">Click to select multiple files - 100% local in browser</p>
+  <input type="file" id="j2pFileInput" accept="image/*" multiple style="display:none;">
+</div>
+<div id="j2pFileList" style="margin-bottom:1.25rem;"></div>
+<div class="form-group">
+  <label for="j2pPageSize">PDF Page Layout:</label>
+  <select id="j2pPageSize" class="form-select">
+    <option value="a4">Standard A4 Document (Auto-Fit Centered)</option>
+    <option value="fit">Exact Image Dimensions (No Margins)</option>
+  </select>
+</div>
+<div class="btn-group" style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+  <button id="btnJ2pConvert" class="btn btn-primary" style="flex:1;">&#128196; Convert Images to PDF</button>
+  <button id="btnJ2pClear" class="btn btn-ghost">Clear Queue</button>
+</div>
+          <div class="faq-section" style="margin-top:2rem;">
+            <h2 style="font-size:1.3rem;margin-bottom:1.25rem;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border:1px solid rgba(255,255,255,0.08);border-radius:10px;margin-bottom:0.75rem;padding:1rem;">
+                <summary style="cursor:pointer;font-weight:600;color:#818cf8;">Is it safe to convert ID photos and documents from JPG to PDF here?</summary>
+                <p style="margin-top:0.75rem;color:rgba(255,255,255,0.7);line-height:1.6;">Yes! SmartToolzAI compiles your images into a PDF entirely inside your browser using pdf-lib. Your photos are never uploaded to any remote server.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>&#169; 2026 SmartToolzAI. All rights reserved. 100% Free &amp; Client-Side Private.</p></div></div></footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/jpg-to-pdf.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

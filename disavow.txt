@@ -1,0 +1,24 @@
+# Google Search Console Disavow File for smarttoolzai.com
+# Automated .shop / .site SEO Scraper Spam Network Domains (Detected via Ahrefs)
+# Upload at: https://search.google.com/search-console/disavow-links
+
+domain:boldseolink.shop
+domain:cleanseohub.shop
+domain:seomexa.shop
+domain:solidranklab.shop
+domain:seorankoo.site
+domain:siteranktoolkit.shop
+domain:fiverr-seo-for-small-businesses.site
+domain:seorankoworld.shop
+domain:fastranklab.shop
+domain:nextlinkpro.shop
+domain:rankzaro.shop
+domain:rankmiro.shop
+domain:indextexa.shop
+domain:seoboostsystems.shop
+domain:fastseolink.shop
+domain:seodaro.com
+domain:seotexa.shop
+domain:crispseolink.shop
+domain:seolinksagency.shop
+domain:vividlinkpro.shop

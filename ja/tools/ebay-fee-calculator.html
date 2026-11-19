@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBay販売手数料・輸出利益計算機 (2026年最新) - （登録不要・完全無料）— SmartToolzAI</title>
+  <meta name="description" content="eBay落札手数料・送料・仕入れ値から手残り利益とマージンを正確に算出。">
+  <link rel="canonical" href="https://smarttoolzai.com/ja/tools/ebay-fee-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/ebay-fee-calculator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/ebay-fee-calculator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/ebay-fee-calculator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/ebay-fee-calculator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/ebay-fee-calculator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/ebay-fee-calculator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/ebay-fee-calculator.html" />
+  <meta property="og:title" content="eBay販売手数料・輸出利益計算機 (2026年最新) - （登録不要・完全無料）— SmartToolzAI">
+  <meta property="og:description" content="eBay落札手数料・送料・仕入れ値から手残り利益とマージンを正確に算出。">
+  <!-- Google Search SERP & Multi-Device Favicon Suite -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48 32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:image" content="https://smarttoolzai.com/og-image.jpg">
+  <meta name="twitter:image" content="https://smarttoolzai.com/og-image.jpg">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Etsy, eBay & TikTok Shop Fee & Profit Calculator",
+    "url": "https://smarttoolzai.com/ja/tools/ebay-fee-calculator.html", "inLanguage": "ja",
+    "description": "Calculate marketplace referral fees, payment processing fees, net profit, and profit margins for Etsy, eBay, TikTok Shop, Amazon, and Shopify.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">⚡</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">AIツール</a>
+        <a href="../index.html#tools">便利ツール</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../../pages/about.html">サイト概要</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>eBay販売手数料・輸出利益計算機 (2026年最新)</h1>
+          <p class="tool-description">eBay落札手数料・送料・仕入れ値から手残り利益とマージンを正確に算出。</p>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
+            <div>
+              <label for="ecPlatform">Select Marketplace Platform:</label>
+              <select id="ecPlatform" class="form-select">
+                <option value="etsy">Etsy Marketplace (6.5% + 3% + $0.25 + $0.20 Listing)</option>
+                <option value="ebay" selected>eBay Standard Seller (13.25% + $0.30 Final Value Fee)</option>
+                <option value="tiktok">TikTok Shop Seller (6.0% + $0.30 Commission)</option>
+                <option value="shopify">Shopify Store (2.9% + $0.30 Shopify Payments)</option>
+                <option value="amazon">Amazon Seller Standard (15% Referral Fee)</option>
+              </select>
+            </div>
+            <div>
+              <label for="ecSalePrice">Item Sale Price ($):</label>
+              <input type="number" id="ecSalePrice" class="form-input" value="45.00" min="0" step="0.50">
+            </div>
+            <div>
+              <label for="ecShippingCharge">Shipping Charged to Buyer ($):</label>
+              <input type="number" id="ecShippingCharge" class="form-input" value="5.00" min="0" step="0.50">
+            </div>
+          </div>
+
+          <div class="form-group" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;">
+            <div>
+              <label for="ecItemCost">Product Cost / COGS ($):</label>
+              <input type="number" id="ecItemCost" class="form-input" value="14.00" min="0" step="0.50">
+            </div>
+            <div>
+              <label for="ecShippingCost">Actual Shipping & Packaging Cost ($):</label>
+              <input type="number" id="ecShippingCost" class="form-input" value="4.50" min="0" step="0.50">
+            </div>
+            <div>
+              <label for="ecAdSpend">Offsite Ads / Promo Cost ($):</label>
+              <input type="number" id="ecAdSpend" class="form-input" value="0.00" min="0" step="0.50">
+            </div>
+          </div>
+
+          <div class="result-box" style="margin-top:1.5rem;">
+            <div class="result-header">
+              <h4>🛍️ Seller Profit & Fee Breakdown</h4>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:1rem;">
+              <div style="background:rgba(255,255,255,0.04);padding:1.1rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Gross Revenue</div>
+                <div id="ecOutRevenue" style="font-size:1.5rem;font-weight:700;">$50.00</div>
+              </div>
+              <div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);padding:1.1rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Platform & Payment Fees</div>
+                <div id="ecOutFees" style="font-size:1.5rem;font-weight:800;color:#f87171;">$5.20</div>
+              </div>
+              <div style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);padding:1.1rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Net Take-Home Profit</div>
+                <div id="ecOutProfit" style="font-size:1.5rem;font-weight:800;color:#34d399;">$26.30</div>
+              </div>
+              <div style="background:rgba(79,70,229,0.12);border:1px solid rgba(129,140,248,0.35);padding:1.1rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">Net Profit Margin</div>
+                <div id="ecOutMargin" style="font-size:1.5rem;font-weight:800;color:#818cf8;">52.6%</div>
+              </div>
+            </div>
+            <p id="ecFeeBreakdownText" style="margin-top:1rem;font-size:0.85rem;color:rgba(255,255,255,0.65);text-align:center;"></p>
+          </div>
+
+          <div class="info-section" style="margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
+            <h2 style="font-size:1.3rem;margin-bottom:1rem;">2026 Marketplace Seller Fees Explained</h2>
+            <p style="color:rgba(255,255,255,0.7);line-height:1.7;">When pricing products on Etsy, eBay, or TikTok Shop, remember that percentage commissions are charged on the <strong>total amount paid by the buyer (including shipping charges)</strong>. Use this calculator before listing any product to ensure your net margin stays above 25%–35%.</p>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 SmartToolzAI. All rights reserved.</p></div></div></footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/ecommerce-fee-calculator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>

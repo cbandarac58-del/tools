@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Cron Expression Generator & Human-Readable Schedule Explainer - SmartToolzAI</title>
+  <meta name="description" content="Build and decode 5-field Linux, GitHub Actions, and Kubernetes Cron schedules with instant plain-English explanations and 1-click presets.">
+  <link rel="canonical" href="https://smarttoolzai.com/tools/cron-expression-generator.html">
+  <link rel="alternate" hreflang="en" href="https://smarttoolzai.com/tools/cron-expression-generator.html" />
+  <link rel="alternate" hreflang="es" href="https://smarttoolzai.com/es/tools/cron-expression-generator.html" />
+  <link rel="alternate" hreflang="pt" href="https://smarttoolzai.com/pt/tools/cron-expression-generator.html" />
+  <link rel="alternate" hreflang="ja" href="https://smarttoolzai.com/ja/tools/cron-expression-generator.html" />
+  <link rel="alternate" hreflang="de" href="https://smarttoolzai.com/de/tools/cron-expression-generator.html" />
+  <link rel="alternate" hreflang="fr" href="https://smarttoolzai.com/fr/tools/cron-expression-generator.html" />
+  <link rel="alternate" hreflang="x-default" href="https://smarttoolzai.com/tools/cron-expression-generator.html" />
+  <meta property="og:title" content="Free Cron Expression Generator & Human-Readable Schedule Explainer - SmartToolzAI">
+  <meta property="og:description" content="Build and decode 5-field Linux, GitHub Actions, and Kubernetes Cron schedules with instant plain-English explanations and 1-click presets.">
+  <!-- Google Search SERP & Multi-Device Favicon Suite -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48 32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:image" content="https://smarttoolzai.com/og-image.jpg">
+  <meta name="twitter:image" content="https://smarttoolzai.com/og-image.jpg">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Cron Expression Generator & Explainer",
+    "url": "https://smarttoolzai.com/tools/cron-expression-generator.html",
+    "description": "Build and decode 5-field Linux, GitHub Actions, and Kubernetes Cron schedules with instant plain-English explanations and 1-click presets.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the 5 fields in a standard Cron expression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 5 fields from left to right represent Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), and Day of Week (0-6, Sunday=0)."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo"><div class="logo-icon">&#9889;</div>SmartToolz<span class="gradient-text">AI</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html#pro-tools">Pro Tools</a>
+        <a href="../index.html#ai-tools">AI Tools</a>
+        <a href="../index.html#tools">Utility Tools</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../pages/about.html">About</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tool-page">
+    <div class="container">
+      <div class="tool-layout">
+        <div class="tool-main">
+          <h1>Cron Expression Generator & Explainer</h1>
+          <p class="tool-description">Build and decode 5-field Linux, GitHub Actions, and Kubernetes Cron schedules with instant plain-English explanations and 1-click presets.</p>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.25rem;">
+  <button type="button" class="btn btn-ghost btn-sm" data-cron-preset="* * * * *">Every Minute</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-cron-preset="*/15 * * * *">Every 15 Mins</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-cron-preset="0 * * * *">Every Hour</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-cron-preset="0 0 * * *">Daily Midnight</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-cron-preset="0 9 * * 1-5">Weekdays 9 AM</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-cron-preset="0 0 1 * *">Monthly (1st)</button>
+</div>
+<div class="form-group" style="display:grid;grid-template-columns:repeat(5,1fr);gap:0.65rem;">
+  <div><label for="cronMin">Minute</label><input type="text" id="cronMin" class="form-input" value="0"></div>
+  <div><label for="cronHour">Hour</label><input type="text" id="cronHour" class="form-input" value="9"></div>
+  <div><label for="cronDom">Day(M)</label><input type="text" id="cronDom" class="form-input" value="*"></div>
+  <div><label for="cronMon">Month</label><input type="text" id="cronMon" class="form-input" value="*"></div>
+  <div><label for="cronDow">Day(W)</label><input type="text" id="cronDow" class="form-input" value="1-5"></div>
+</div>
+<div class="result-box" style="margin-top:1.25rem;text-align:center;">
+  <div id="cronOutExpr" style="font-family:monospace;font-size:2rem;font-weight:800;color:#818cf8;letter-spacing:0.15rem;">0 9 * * 1-5</div>
+  <p id="cronOutHuman" style="margin:0.75rem 0 1rem;color:#34d399;font-weight:600;"></p>
+  <button id="btnCopyCron" class="btn btn-primary btn-sm">&#128203; Copy Cron Expression</button>
+</div>
+          <div class="faq-section" style="margin-top:2rem;">
+            <h2 style="font-size:1.3rem;margin-bottom:1.25rem;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <details class="faq-item" style="border:1px solid rgba(255,255,255,0.08);border-radius:10px;margin-bottom:0.75rem;padding:1rem;">
+                <summary style="cursor:pointer;font-weight:600;color:#818cf8;">What are the 5 fields in a standard Cron expression?</summary>
+                <p style="margin-top:0.75rem;color:rgba(255,255,255,0.7);line-height:1.6;">The 5 fields from left to right represent Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), and Day of Week (0-6, Sunday=0).</p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <aside class="tool-sidebar" id="toolSidebar"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>&#169; 2026 SmartToolzAI. All rights reserved. 100% Free &amp; Client-Side Private.</p></div></div></footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/tools/cron-expression-generator.js"></script>
+  <div class="toast" id="toast"></div>
+</body>
+</html>
